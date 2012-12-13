@@ -1,0 +1,14 @@
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.CommandProcessor.dll
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.CommandProcessor.pdb
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.Core.dll
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.Core.pdb
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\obj\Debug\ResolveAssemblyReference.cache
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\obj\Debug\TechEasy.CommandProcessor.dll
+E:\LeeCircle\TechEasy\TechEasy.CommandProcessor\obj\Debug\TechEasy.CommandProcessor.pdb
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.CommandProcessor.dll
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.CommandProcessor.pdb
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.Core.dll
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\bin\Debug\TechEasy.Core.pdb
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\obj\Debug\ResolveAssemblyReference.cache
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\obj\Debug\TechEasy.CommandProcessor.dll
+F:\NetEasy\TechEasy\TechEasy\TechEasy.CommandProcessor\obj\Debug\TechEasy.CommandProcessor.pdb
