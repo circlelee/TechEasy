@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E49C4B53-D82B-43F3-BEBA-EB440260663E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TechEasy.Domain</RootNamespace>
+    <AssemblyName>TechEasy.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountsPrincipal.cs" />
+    <Compile Include="Accounts\AccountUserFromModel.cs" />
+    <Compile Include="Accounts\SiteIdentity.cs" />
+    <Compile Include="Commands\ErrorLogCreateCommand.cs" />
+    <Compile Include="Commands\Security\UserRegisterCommand.cs" />
+    <Compile Include="Handlers\Security\UserRegisterHandler.cs" />
+    <Compile Include="Handlers\Security\UserRegisterValidateHandler.cs" />
+    <Compile Include="Interface\IService.cs" />
+    <Compile Include="Interface\ServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ActionsPermissionService.cs" />
+    <Compile Include="Services\AccountUserService.cs" />
+    <Compile Include="Services\AccountUserExpService.cs" />
+    <Compile Include="Services\SNSPhotoTagService.cs" />
+    <Compile Include="Services\SNSCommentService.cs" />
+    <Compile Include="Services\SNSFavouriteService.cs" />
+    <Compile Include="Services\SAErrorLogService.cs" />
+    <Compile Include="Services\SAConfigSystemService.cs" />
+    <Compile Include="Services\SNSTagService.cs" />
+    <Compile Include="Services\SNSTagTypeService.cs" />
+    <Compile Include="Services\SNSProductService.cs" />
+    <Compile Include="Services\SNSUserAlbumsDetailService.cs" />
+    <Compile Include="Services\SNSPostService.cs" />
+    <Compile Include="Services\FriendLinkService.cs" />
+    <Compile Include="Services\SiteMessageService.cs" />
+    <Compile Include="Services\SNSCategoryService.cs" />
+    <Compile Include="Services\SNSPhotoService.cs" />
+    <Compile Include="Services\SNSUserAlbumsService.cs" />
+    <Compile Include="Services\SystemManger\ApplicationKeyType.cs" />
+    <Compile Include="Services\SystemManger\WebSiteSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TechEasy.CommandProcessor\TechEasy.CommandProcessor.csproj">
+      <Project>{0AC96353-2A80-41A8-8854-C0E960008B57}</Project>
+      <Name>TechEasy.CommandProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechEasy.Core\TechEasy.Core.csproj">
+      <Project>{1944B18D-3EA9-487A-9AE8-FA5E72673E20}</Project>
+      <Name>TechEasy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechEasy.Data\TechEasy.Data.csproj">
+      <Project>{165D58FB-CC40-4167-AD4D-BA4DC74191C3}</Project>
+      <Name>TechEasy.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechEasy.Model\TechEasy.Model.csproj">
+      <Project>{F88420F4-99B3-4F91-AF13-8D88380F1F53}</Project>
+      <Name>TechEasy.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechEasy.ViewModel\TechEasy.ViewModel.csproj">
+      <Project>{77716E66-CBE8-4684-83A1-CD8514FCB895}</Project>
+      <Name>TechEasy.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
