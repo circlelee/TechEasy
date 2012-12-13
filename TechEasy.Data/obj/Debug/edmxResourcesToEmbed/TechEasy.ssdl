@@ -1,0 +1,2660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MaticsoftFKModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MaticsoftFKModelStoreContainer">
+    <EntitySet Name="Accounts_Actions_Permission" EntityType="MaticsoftFKModel.Store.Accounts_Actions_Permission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_EmailQueue" EntityType="MaticsoftFKModel.Store.Accounts_EmailQueue" store:Type="Tables" store:Schema="dbo" store:Name="Accounts_EmailQueue">
+      <DefiningQuery>SELECT 
+      [Accounts_EmailQueue].[EmailId] AS [EmailId], 
+      [Accounts_EmailQueue].[EmailPriority] AS [EmailPriority], 
+      [Accounts_EmailQueue].[IsBodyHtml] AS [IsBodyHtml], 
+      [Accounts_EmailQueue].[EmailTo] AS [EmailTo], 
+      [Accounts_EmailQueue].[EmailCc] AS [EmailCc], 
+      [Accounts_EmailQueue].[EmailBcc] AS [EmailBcc], 
+      [Accounts_EmailQueue].[EmailFrom] AS [EmailFrom], 
+      [Accounts_EmailQueue].[EmailSubject] AS [EmailSubject], 
+      [Accounts_EmailQueue].[EmailBody] AS [EmailBody], 
+      [Accounts_EmailQueue].[NextTryTime] AS [NextTryTime], 
+      [Accounts_EmailQueue].[NumberOfTries] AS [NumberOfTries]
+      FROM [dbo].[Accounts_EmailQueue] AS [Accounts_EmailQueue]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Accounts_MailConfig" EntityType="MaticsoftFKModel.Store.Accounts_MailConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_PermissionCategories" EntityType="MaticsoftFKModel.Store.Accounts_PermissionCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_Permissions" EntityType="MaticsoftFKModel.Store.Accounts_Permissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_PointsDetail" EntityType="MaticsoftFKModel.Store.Accounts_PointsDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_PointsLimit" EntityType="MaticsoftFKModel.Store.Accounts_PointsLimit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_PointsRule" EntityType="MaticsoftFKModel.Store.Accounts_PointsRule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_RolePermissions" EntityType="MaticsoftFKModel.Store.Accounts_RolePermissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_Roles" EntityType="MaticsoftFKModel.Store.Accounts_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UserAssignmentRoles" EntityType="MaticsoftFKModel.Store.Accounts_UserAssignmentRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UserBind" EntityType="MaticsoftFKModel.Store.Accounts_UserBind" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UserRank" EntityType="MaticsoftFKModel.Store.Accounts_UserRank" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UserRoles" EntityType="MaticsoftFKModel.Store.Accounts_UserRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_Users" EntityType="MaticsoftFKModel.Store.Accounts_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UsersApprove" EntityType="MaticsoftFKModel.Store.Accounts_UsersApprove" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UsersExp" EntityType="MaticsoftFKModel.Store.Accounts_UsersExp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts_UserType" EntityType="MaticsoftFKModel.Store.Accounts_UserType" store:Type="Tables" store:Schema="dbo" store:Name="Accounts_UserType">
+      <DefiningQuery>SELECT 
+      [Accounts_UserType].[UserType] AS [UserType], 
+      [Accounts_UserType].[Description] AS [Description]
+      FROM [dbo].[Accounts_UserType] AS [Accounts_UserType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Accounts_VerifyMail" EntityType="MaticsoftFKModel.Store.Accounts_VerifyMail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AD_Advertisement" EntityType="MaticsoftFKModel.Store.AD_Advertisement" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AD_AdvertisePosition" EntityType="MaticsoftFKModel.Store.AD_AdvertisePosition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Brand" EntityType="MaticsoftFKModel.Store.CMS_Brand" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_ClassType" EntityType="MaticsoftFKModel.Store.CMS_ClassType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Comment" EntityType="MaticsoftFKModel.Store.CMS_Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Content" EntityType="MaticsoftFKModel.Store.CMS_Content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_ContentClass" EntityType="MaticsoftFKModel.Store.CMS_ContentClass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_FLinks" EntityType="MaticsoftFKModel.Store.CMS_FLinks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Guestbook" EntityType="MaticsoftFKModel.Store.CMS_Guestbook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Photo" EntityType="MaticsoftFKModel.Store.CMS_Photo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_PhotoAlbum" EntityType="MaticsoftFKModel.Store.CMS_PhotoAlbum" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_PhotoClass" EntityType="MaticsoftFKModel.Store.CMS_PhotoClass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_PrototypeStore" EntityType="MaticsoftFKModel.Store.CMS_PrototypeStore" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_Video" EntityType="MaticsoftFKModel.Store.CMS_Video" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_VideoAlbum" EntityType="MaticsoftFKModel.Store.CMS_VideoAlbum" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_VideoClass" EntityType="MaticsoftFKModel.Store.CMS_VideoClass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CMS_WebMenuConfig" EntityType="MaticsoftFKModel.Store.CMS_WebMenuConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_EmailTemplet" EntityType="MaticsoftFKModel.Store.Ms_EmailTemplet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_Enterprise" EntityType="MaticsoftFKModel.Store.Ms_Enterprise" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_EntryForm" EntityType="MaticsoftFKModel.Store.Ms_EntryForm" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_Maps" EntityType="MaticsoftFKModel.Store.Ms_Maps" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_Regions" EntityType="MaticsoftFKModel.Store.Ms_Regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ms_SEORelation" EntityType="MaticsoftFKModel.Store.Ms_SEORelation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Poll_Forms" EntityType="MaticsoftFKModel.Store.Poll_Forms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Poll_Options" EntityType="MaticsoftFKModel.Store.Poll_Options" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Poll_Reply" EntityType="MaticsoftFKModel.Store.Poll_Reply" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Poll_Topics" EntityType="MaticsoftFKModel.Store.Poll_Topics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Poll_UserPoll" EntityType="MaticsoftFKModel.Store.Poll_UserPoll" store:Type="Tables" store:Schema="dbo" store:Name="Poll_UserPoll">
+      <DefiningQuery>SELECT 
+      [Poll_UserPoll].[UserID] AS [UserID], 
+      [Poll_UserPoll].[TopicID] AS [TopicID], 
+      [Poll_UserPoll].[OptionID] AS [OptionID], 
+      [Poll_UserPoll].[CreatTime] AS [CreatTime], 
+      [Poll_UserPoll].[UserIP] AS [UserIP]
+      FROM [dbo].[Poll_UserPoll] AS [Poll_UserPoll]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Poll_Users" EntityType="MaticsoftFKModel.Store.Poll_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Config_System" EntityType="MaticsoftFKModel.Store.SA_Config_System" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Config_Type" EntityType="MaticsoftFKModel.Store.SA_Config_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_ErrorLog" EntityType="MaticsoftFKModel.Store.SA_ErrorLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Feedback" EntityType="MaticsoftFKModel.Store.SA_Feedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_FilterWords" EntityType="MaticsoftFKModel.Store.SA_FilterWords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Language_mstr" EntityType="MaticsoftFKModel.Store.SA_Language_mstr" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Log" EntityType="MaticsoftFKModel.Store.SA_Log" store:Type="Tables" store:Schema="dbo" store:Name="SA_Log">
+      <DefiningQuery>SELECT 
+      [SA_Log].[ID] AS [ID], 
+      [SA_Log].[datetime] AS [datetime], 
+      [SA_Log].[loginfo] AS [loginfo], 
+      [SA_Log].[Particular] AS [Particular]
+      FROM [dbo].[SA_Log] AS [SA_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SA_MultiLang_det" EntityType="MaticsoftFKModel.Store.SA_MultiLang_det" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_ReceivedMessages" EntityType="MaticsoftFKModel.Store.SA_ReceivedMessages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_SendedMessages" EntityType="MaticsoftFKModel.Store.SA_SendedMessages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_SiteMessage" EntityType="MaticsoftFKModel.Store.SA_SiteMessage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_SiteMessageLog" EntityType="MaticsoftFKModel.Store.SA_SiteMessageLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_SiteSettings" EntityType="MaticsoftFKModel.Store.SA_SiteSettings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_Tree" EntityType="MaticsoftFKModel.Store.SA_Tree" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_TreeFavorite" EntityType="MaticsoftFKModel.Store.SA_TreeFavorite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SA_UserLog" EntityType="MaticsoftFKModel.Store.SA_UserLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_AlbumType" EntityType="MaticsoftFKModel.Store.SNS_AlbumType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Categories" EntityType="MaticsoftFKModel.Store.SNS_Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_CategorySource" EntityType="MaticsoftFKModel.Store.SNS_CategorySource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Comments" EntityType="MaticsoftFKModel.Store.SNS_Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_FellowTopics" EntityType="MaticsoftFKModel.Store.SNS_FellowTopics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GradeConfig" EntityType="MaticsoftFKModel.Store.SNS_GradeConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Groups" EntityType="MaticsoftFKModel.Store.SNS_Groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GroupTags" EntityType="MaticsoftFKModel.Store.SNS_GroupTags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GroupTopicFav" EntityType="MaticsoftFKModel.Store.SNS_GroupTopicFav" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GroupTopicReply" EntityType="MaticsoftFKModel.Store.SNS_GroupTopicReply" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GroupTopics" EntityType="MaticsoftFKModel.Store.SNS_GroupTopics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GroupUsers" EntityType="MaticsoftFKModel.Store.SNS_GroupUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_GuestBook" EntityType="MaticsoftFKModel.Store.SNS_GuestBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_HotWords" EntityType="MaticsoftFKModel.Store.SNS_HotWords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_OnLineShopPhoto" EntityType="MaticsoftFKModel.Store.SNS_OnLineShopPhoto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Photos" EntityType="MaticsoftFKModel.Store.SNS_Photos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_PhotoTags" EntityType="MaticsoftFKModel.Store.SNS_PhotoTags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Posts" EntityType="MaticsoftFKModel.Store.SNS_Posts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_PostsTopics" EntityType="MaticsoftFKModel.Store.SNS_PostsTopics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Products" EntityType="MaticsoftFKModel.Store.SNS_Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_ProductSources" EntityType="MaticsoftFKModel.Store.SNS_ProductSources" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_ReferUsers" EntityType="MaticsoftFKModel.Store.SNS_ReferUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Report" EntityType="MaticsoftFKModel.Store.SNS_Report" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_ReportType" EntityType="MaticsoftFKModel.Store.SNS_ReportType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_SearchWordLog" EntityType="MaticsoftFKModel.Store.SNS_SearchWordLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_SearchWordTop" EntityType="MaticsoftFKModel.Store.SNS_SearchWordTop" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Star" EntityType="MaticsoftFKModel.Store.SNS_Star" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_StarRank" EntityType="MaticsoftFKModel.Store.SNS_StarRank" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_StarType" EntityType="MaticsoftFKModel.Store.SNS_StarType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Tags" EntityType="MaticsoftFKModel.Store.SNS_Tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_TagType" EntityType="MaticsoftFKModel.Store.SNS_TagType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserAlbumDetail" EntityType="MaticsoftFKModel.Store.SNS_UserAlbumDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserAlbums" EntityType="MaticsoftFKModel.Store.SNS_UserAlbums" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserAlbumsType" EntityType="MaticsoftFKModel.Store.SNS_UserAlbumsType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserFavAlbum" EntityType="MaticsoftFKModel.Store.SNS_UserFavAlbum" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserFavourite" EntityType="MaticsoftFKModel.Store.SNS_UserFavourite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserShip" EntityType="MaticsoftFKModel.Store.SNS_UserShip" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_UserShipCategories" EntityType="MaticsoftFKModel.Store.SNS_UserShipCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_Videos" EntityType="MaticsoftFKModel.Store.SNS_Videos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SNS_VisiteLogs" EntityType="MaticsoftFKModel.Store.SNS_VisiteLogs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Accounts_Actions_Permission_Accounts_Permissions" Association="MaticsoftFKModel.Store.FK_Accounts_Actions_Permission_Accounts_Permissions">
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+      <End Role="Accounts_Actions_Permission" EntitySet="Accounts_Actions_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_MailConfig_Accounts_Users" Association="MaticsoftFKModel.Store.FK_Accounts_MailConfig_Accounts_Users">
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+      <End Role="Accounts_MailConfig" EntitySet="Accounts_MailConfig" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_Permissions_Accounts_PermissionCategories" Association="MaticsoftFKModel.Store.FK_Accounts_Permissions_Accounts_PermissionCategories">
+      <End Role="Accounts_PermissionCategories" EntitySet="Accounts_PermissionCategories" />
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_PointsDetail_Accounts_PointsRule" Association="MaticsoftFKModel.Store.FK_Accounts_PointsDetail_Accounts_PointsRule">
+      <End Role="Accounts_PointsRule" EntitySet="Accounts_PointsRule" />
+      <End Role="Accounts_PointsDetail" EntitySet="Accounts_PointsDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_PointsRule_Accounts_PointsLimit" Association="MaticsoftFKModel.Store.FK_Accounts_PointsRule_Accounts_PointsLimit">
+      <End Role="Accounts_PointsLimit" EntitySet="Accounts_PointsLimit" />
+      <End Role="Accounts_PointsRule" EntitySet="Accounts_PointsRule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_RolePermissions_Accounts_Permissions" Association="MaticsoftFKModel.Store.FK_Accounts_RolePermissions_Accounts_Permissions">
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+      <End Role="Accounts_RolePermissions" EntitySet="Accounts_RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_RolePermissions_Accounts_Roles" Association="MaticsoftFKModel.Store.FK_Accounts_RolePermissions_Accounts_Roles">
+      <End Role="Accounts_Roles" EntitySet="Accounts_Roles" />
+      <End Role="Accounts_RolePermissions" EntitySet="Accounts_RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_UserRoles_Accounts_Roles" Association="MaticsoftFKModel.Store.FK_Accounts_UserRoles_Accounts_Roles">
+      <End Role="Accounts_Roles" EntitySet="Accounts_Roles" />
+      <End Role="Accounts_UserRoles" EntitySet="Accounts_UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_UserRoles_Accounts_Users" Association="MaticsoftFKModel.Store.FK_Accounts_UserRoles_Accounts_Users">
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+      <End Role="Accounts_UserRoles" EntitySet="Accounts_UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SA_TreeFavorite_Accounts_Users" Association="MaticsoftFKModel.Store.FK_SA_TreeFavorite_Accounts_Users">
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+      <End Role="SA_TreeFavorite" EntitySet="SA_TreeFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Comments_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_SNS_Photos" Association="MaticsoftFKModel.Store.FK_SNS_Comments_SNS_Photos">
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_SNS_Posts" Association="MaticsoftFKModel.Store.FK_SNS_Comments_SNS_Posts">
+      <End Role="SNS_Posts" EntitySet="SNS_Posts" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_FellowTopics_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_FellowTopics_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_FellowTopics" EntitySet="SNS_FellowTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_FellowTopics_SNS_PostTopics" Association="MaticsoftFKModel.Store.FK_SNS_FellowTopics_SNS_PostTopics">
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+      <End Role="SNS_FellowTopics" EntitySet="SNS_FellowTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Group_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Group_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopic_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_GroupTopic_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopicReply_SNS_Groups" Association="MaticsoftFKModel.Store.FK_SNS_GroupTopicReply_SNS_Groups">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopics_SNS_Groups" Association="MaticsoftFKModel.Store.FK_SNS_GroupTopics_SNS_Groups">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupUser_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_GroupUser_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupUsers" EntitySet="SNS_GroupUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupUser_SNS_Group" Association="MaticsoftFKModel.Store.FK_SNS_GroupUser_SNS_Group">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupUsers" EntitySet="SNS_GroupUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GuestBook_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_GuestBook_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GuestBook" EntitySet="SNS_GuestBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GuestBook_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_GuestBook_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GuestBook" EntitySet="SNS_GuestBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Photo_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Photo_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PhotoAlbum_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_PhotoAlbum_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Photos_SNS_Categories" Association="MaticsoftFKModel.Store.FK_SNS_Photos_SNS_Categories">
+      <End Role="SNS_Categories" EntitySet="SNS_Categories" />
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Post_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Post_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Posts" EntitySet="SNS_Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PostTopics_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_PostTopics_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PostTopics_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_PostTopics_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Product_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Product_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Products" EntitySet="SNS_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Products_SNS_ProductSources" Association="MaticsoftFKModel.Store.FK_SNS_Products_SNS_ProductSources">
+      <End Role="SNS_ProductSources" EntitySet="SNS_ProductSources" />
+      <End Role="SNS_Products" EntitySet="SNS_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_ReferUsers_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_ReferUsers_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_ReferUsers" EntitySet="SNS_ReferUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Report_SNS_ReportType" Association="MaticsoftFKModel.Store.FK_SNS_Report_SNS_ReportType">
+      <End Role="SNS_ReportType" EntitySet="SNS_ReportType" />
+      <End Role="SNS_Report" EntitySet="SNS_Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_Star_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_Star_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_SNS_StarType" Association="MaticsoftFKModel.Store.FK_SNS_Star_SNS_StarType">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_SNS_StarType1" Association="MaticsoftFKModel.Store.FK_SNS_Star_SNS_StarType1">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_StarRank_SNS_StarType" Association="MaticsoftFKModel.Store.FK_SNS_StarRank_SNS_StarType">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_StarRank" EntitySet="SNS_StarRank" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Tags_SNS_TagType" Association="MaticsoftFKModel.Store.FK_SNS_Tags_SNS_TagType">
+      <End Role="SNS_TagType" EntitySet="SNS_TagType" />
+      <End Role="SNS_Tags" EntitySet="SNS_Tags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_TopicCollection_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_TopicCollection_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_SNS_GroupTopic" Association="MaticsoftFKModel.Store.FK_SNS_TopicCollection_SNS_GroupTopic">
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_TopicReply_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_TopicReply_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_SNS_GroupTopic" Association="MaticsoftFKModel.Store.FK_SNS_TopicReply_SNS_GroupTopic">
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_Photos" Association="MaticsoftFKModel.Store.FK_SNS_UserAlbumDetail_SNS_Photos">
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_UserAlbums" Association="MaticsoftFKModel.Store.FK_SNS_UserAlbumDetail_SNS_UserAlbums">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_Videos" Association="MaticsoftFKModel.Store.FK_SNS_UserAlbumDetail_SNS_Videos">
+      <End Role="SNS_Videos" EntitySet="SNS_Videos" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumsType_SNS_AlbumType" Association="MaticsoftFKModel.Store.FK_SNS_UserAlbumsType_SNS_AlbumType">
+      <End Role="SNS_AlbumType" EntitySet="SNS_AlbumType" />
+      <End Role="SNS_UserAlbumsType" EntitySet="SNS_UserAlbumsType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumsType_SNS_UserAlbums" Association="MaticsoftFKModel.Store.FK_SNS_UserAlbumsType_SNS_UserAlbums">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserAlbumsType" EntitySet="SNS_UserAlbumsType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserFavAlbum_SNS_UserAlbum" Association="MaticsoftFKModel.Store.FK_SNS_UserFavAlbum_SNS_UserAlbum">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserFavAlbum" EntitySet="SNS_UserFavAlbum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserFavourite_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_UserFavourite_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserFavourite" EntitySet="SNS_UserFavourite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserShipCategories_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_UserShipCategories_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserShipCategories" EntitySet="SNS_UserShipCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Videos_SNS_Categories" Association="MaticsoftFKModel.Store.FK_SNS_Videos_SNS_Categories">
+      <End Role="SNS_Categories" EntitySet="SNS_Categories" />
+      <End Role="SNS_Videos" EntitySet="SNS_Videos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_VisiteLogs_Accounts_UsersExp" Association="MaticsoftFKModel.Store.FK_SNS_VisiteLogs_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_VisiteLogs" EntitySet="SNS_VisiteLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_VisiteLogs_Accounts_UsersExp1" Association="MaticsoftFKModel.Store.FK_SNS_VisiteLogs_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_VisiteLogs" EntitySet="SNS_VisiteLogs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts_Actions_Permission">
+    <Key>
+      <PropertyRef Name="ActionID" />
+    </Key>
+    <Property Name="ActionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+    <Property Name="PermissionID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MaticsoftFK.dbo.Accounts_EmailQueue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Accounts_EmailQueue">
+    <Key>
+      <PropertyRef Name="EmailId" />
+      <PropertyRef Name="EmailPriority" />
+      <PropertyRef Name="IsBodyHtml" />
+      <PropertyRef Name="NextTryTime" />
+      <PropertyRef Name="NumberOfTries" />
+    </Key>
+    <Property Name="EmailId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmailPriority" Type="int" Nullable="false" />
+    <Property Name="IsBodyHtml" Type="bit" Nullable="false" />
+    <Property Name="EmailTo" Type="nvarchar" MaxLength="2000" />
+    <Property Name="EmailCc" Type="ntext" />
+    <Property Name="EmailBcc" Type="ntext" />
+    <Property Name="EmailFrom" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailSubject" Type="nvarchar" MaxLength="1024" />
+    <Property Name="EmailBody" Type="ntext" />
+    <Property Name="NextTryTime" Type="datetime" Nullable="false" />
+    <Property Name="NumberOfTries" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_MailConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Mailaddress" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="SMTPServer" Type="nvarchar" MaxLength="50" />
+    <Property Name="SMTPPort" Type="int" />
+    <Property Name="SMTPSSL" Type="smallint" />
+    <Property Name="POPServer" Type="nvarchar" MaxLength="50" />
+    <Property Name="POPPort" Type="int" />
+    <Property Name="POPSSL" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Accounts_PermissionCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Accounts_Permissions">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="CategoryID" Type="int" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsDetail">
+    <Key>
+      <PropertyRef Name="PointsDetailID" />
+    </Key>
+    <Property Name="PointsDetailID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RuleAction" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Score" Type="int" Nullable="false" />
+    <Property Name="ExtData" Type="nvarchar(max)" />
+    <Property Name="CurrentPoints" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsLimit">
+    <Key>
+      <PropertyRef Name="PointsLimitID" />
+    </Key>
+    <Property Name="PointsLimitID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Cycle" Type="int" Nullable="false" />
+    <Property Name="CycleUnit" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaxTimes" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsRule">
+    <Key>
+      <PropertyRef Name="RuleAction" />
+    </Key>
+    <Property Name="RuleAction" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="PointsLimitID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Score" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Accounts_RolePermissions">
+    <Key>
+      <PropertyRef Name="RoleID" />
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Accounts_UserAssignmentRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_UserBind">
+    <Key>
+      <PropertyRef Name="BindId" />
+    </Key>
+    <Property Name="BindId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Token" Type="nvarchar" MaxLength="200" />
+    <Property Name="MediaUserID" Type="int" Nullable="false" />
+    <Property Name="MediaNickName" Type="nvarchar" MaxLength="200" />
+    <Property Name="MediaID" Type="int" Nullable="false" />
+    <Property Name="iHome" Type="bit" />
+    <Property Name="Comment" Type="bit" />
+    <Property Name="GroupTopic" Type="bit" />
+  </EntityType>
+  <EntityType Name="Accounts_UserRank">
+    <Key>
+      <PropertyRef Name="RankId" />
+    </Key>
+    <Property Name="RankId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="Point" Type="int" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="IsAgentRank" Type="bit" Nullable="false" />
+    <Property Name="NumberOfMemberRanks" Type="int" />
+    <Property Name="IsMemberCreated" Type="bit" Nullable="false" />
+    <Property Name="CreatorUserId" Type="int" />
+    <Property Name="PriceType" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="PriceOperations" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="PriceValue" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_UserRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="binary" Nullable="false" MaxLength="20" />
+    <Property Name="NickName" Type="varchar" MaxLength="50" />
+    <Property Name="TrueName" Type="varchar" MaxLength="50" />
+    <Property Name="Sex" Type="char" MaxLength="10" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="DepartmentID" Type="varchar" MaxLength="15" />
+    <Property Name="Activity" Type="bit" />
+    <Property Name="UserType" Type="char" MaxLength="2" />
+    <Property Name="Style" Type="int" />
+    <Property Name="User_iCreator" Type="int" />
+    <Property Name="User_dateCreate" Type="datetime" />
+    <Property Name="User_dateValid" Type="datetime" />
+    <Property Name="User_dateExpire" Type="datetime" />
+    <Property Name="User_iApprover" Type="int" />
+    <Property Name="User_dateApprove" Type="datetime" />
+    <Property Name="User_iApproveState" Type="int" />
+    <Property Name="User_cLang" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Accounts_UsersApprove">
+    <Key>
+      <PropertyRef Name="ApproveID" />
+    </Key>
+    <Property Name="ApproveID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="TrueName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IDCardNum" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="FrontView" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="RearView" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="ApproveUserID" Type="int" Nullable="false" />
+    <Property Name="UserType" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ApproveDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Accounts_UsersExp">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Gravatar" Type="varchar" MaxLength="200" />
+    <Property Name="Singature" Type="nvarchar" MaxLength="200" />
+    <Property Name="TelPhone" Type="varchar" MaxLength="20" />
+    <Property Name="QQ" Type="varchar" MaxLength="30" />
+    <Property Name="MSN" Type="varchar" MaxLength="30" />
+    <Property Name="HomePage" Type="varchar" MaxLength="50" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="BirthdayVisible" Type="smallint" Nullable="false" />
+    <Property Name="BirthdayIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="Constellation" Type="varchar" MaxLength="10" />
+    <Property Name="ConstellationVisible" Type="smallint" Nullable="false" />
+    <Property Name="ConstellationIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="NativePlace" Type="nvarchar" MaxLength="300" />
+    <Property Name="NativePlaceVisible" Type="smallint" Nullable="false" />
+    <Property Name="NativePlaceIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="RegionId" Type="int" />
+    <Property Name="Address" Type="nvarchar" MaxLength="300" />
+    <Property Name="AddressVisible" Type="smallint" Nullable="false" />
+    <Property Name="AddressIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="BodilyForm" Type="nvarchar" MaxLength="10" />
+    <Property Name="BodilyFormVisible" Type="smallint" Nullable="false" />
+    <Property Name="BodilyFormIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="BloodType" Type="nvarchar" MaxLength="10" />
+    <Property Name="BloodTypeVisible" Type="smallint" Nullable="false" />
+    <Property Name="BloodTypeIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="Marriaged" Type="nvarchar" MaxLength="10" />
+    <Property Name="MarriagedVisible" Type="smallint" Nullable="false" />
+    <Property Name="MarriagedIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="PersonalStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="PersonalStatusVisible" Type="smallint" Nullable="false" />
+    <Property Name="PersonalStatusIndexVisible" Type="bit" Nullable="false" />
+    <Property Name="Grade" Type="int" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="Points" Type="int" />
+    <Property Name="PvCount" Type="int" />
+    <Property Name="FansCount" Type="int" />
+    <Property Name="FellowCount" Type="int" />
+    <Property Name="AblumsCount" Type="int" />
+    <Property Name="FavouritesCount" Type="int" />
+    <Property Name="FavoritedCount" Type="int" />
+    <Property Name="ShareCount" Type="int" />
+    <Property Name="ProductsCount" Type="int" />
+    <Property Name="PersonalDomain" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastAccessTime" Type="datetime" />
+    <Property Name="LastAccessIP" Type="varchar" MaxLength="50" />
+    <Property Name="LastPostTime" Type="datetime" />
+    <Property Name="LastLoginTime" Type="datetime" />
+    <Property Name="Remark" Type="varchar" MaxLength="100" />
+    <Property Name="ReplyTopicCount" Type="int" />
+    <Property Name="FavTopicCount" Type="int" />
+    <Property Name="TopicCount" Type="int" />
+    <Property Name="IsUserDPI" Type="bit" />
+    <Property Name="PayAccount" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MaticsoftFK.dbo.Accounts_UserType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Accounts_UserType">
+    <Key>
+      <PropertyRef Name="UserType" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="UserType" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Accounts_VerifyMail">
+    <Key>
+      <PropertyRef Name="KeyValue" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="KeyValue" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="ValidityType" Type="int" />
+  </EntityType>
+  <EntityType Name="AD_Advertisement">
+    <Key>
+      <PropertyRef Name="AdvertisementId" />
+    </Key>
+    <Property Name="AdvertisementId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvertisementName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdvPositionId" Type="int" />
+    <Property Name="ContentType" Type="int" />
+    <Property Name="FileUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="AlternateText" Type="nvarchar" MaxLength="200" />
+    <Property Name="NavigateUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="AdvHtml" Type="nvarchar" MaxLength="500" />
+    <Property Name="Impressions" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedUserID" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="DayMaxPV" Type="int" />
+    <Property Name="DayMaxIP" Type="int" />
+    <Property Name="CPMPrice" Type="money" />
+    <Property Name="AutoStop" Type="int" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="EnterpriseID" Type="int" />
+  </EntityType>
+  <EntityType Name="AD_AdvertisePosition">
+    <Key>
+      <PropertyRef Name="AdvPositionId" />
+    </Key>
+    <Property Name="AdvPositionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvPositionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShowType" Type="int" />
+    <Property Name="RepeatColumns" Type="int" />
+    <Property Name="Width" Type="int" />
+    <Property Name="Height" Type="int" />
+    <Property Name="AdvHtml" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsOne" Type="bit" />
+    <Property Name="TimeInterval" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedUserID" Type="int" />
+  </EntityType>
+  <EntityType Name="CMS_Brand">
+    <Key>
+      <PropertyRef Name="BrandID" />
+    </Key>
+    <Property Name="BrandID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BrandLogo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="BrandDesc" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="EnterpriseID" Type="int" Nullable="false" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="Orders" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_ClassType">
+    <Key>
+      <PropertyRef Name="ClassTypeID" />
+    </Key>
+    <Property Name="ClassTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassTypeName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CMS_Comment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ContentId" Type="int" />
+    <Property Name="Description" Type="text" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="ReplyCount" Type="int" Nullable="false" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="smallint" Nullable="false" />
+    <Property Name="State" Type="bit" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Content">
+    <Key>
+      <PropertyRef Name="ContentID" />
+    </Key>
+    <Property Name="ContentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SubTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="Summary" Type="ntext" />
+    <Property Name="Description" Type="text" />
+    <Property Name="ImageUrl" Type="varchar" MaxLength="100" />
+    <Property Name="ThumbImageUrl" Type="varchar" MaxLength="200" />
+    <Property Name="NormalImageUrl" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="LastEditUserID" Type="int" />
+    <Property Name="LastEditDate" Type="datetime" />
+    <Property Name="LinkUrl" Type="varchar" MaxLength="200" />
+    <Property Name="PvCount" Type="int" Nullable="false" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="ClassID" Type="int" Nullable="false" />
+    <Property Name="Keywords" Type="varchar" MaxLength="50" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="IsRecomend" Type="bit" Nullable="false" />
+    <Property Name="IsHot" Type="bit" Nullable="false" />
+    <Property Name="IsColor" Type="bit" Nullable="false" />
+    <Property Name="IsTop" Type="bit" Nullable="false" />
+    <Property Name="Attachment" Type="varchar" MaxLength="200" />
+    <Property Name="Remary" Type="varchar" MaxLength="200" />
+    <Property Name="TotalComment" Type="int" Nullable="false" />
+    <Property Name="TotalSupport" Type="int" Nullable="false" />
+    <Property Name="TotalFav" Type="int" Nullable="false" />
+    <Property Name="TotalShare" Type="int" Nullable="false" />
+    <Property Name="BeFrom" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CMS_ContentClass">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ClassIndex" Type="varchar" MaxLength="50" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="AllowSubclass" Type="bit" Nullable="false" />
+    <Property Name="AllowAddContent" Type="bit" Nullable="false" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Keywords" Type="varchar" MaxLength="50" />
+    <Property Name="ClassTypeID" Type="int" Nullable="false" />
+    <Property Name="ClassModel" Type="smallint" Nullable="false" />
+    <Property Name="PageModelName" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="Path" Type="varchar" MaxLength="1000" />
+    <Property Name="Depth" Type="int" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="CMS_FLinks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ImgUrl" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="LinkUrl" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="LinkDesc" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="ContactPerson" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="TelPhone" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="TypeID" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Guestbook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="ntext" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="ReplyCount" Type="int" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+  </EntityType>
+  <EntityType Name="CMS_Photo">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoName" Type="varchar" MaxLength="200" />
+    <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="AlbumID" Type="int" Nullable="false" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="ClassID" Type="int" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="varchar" MaxLength="200" />
+    <Property Name="NormalImageUrl" Type="varchar" MaxLength="200" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="IsRecomend" Type="bit" />
+    <Property Name="CommentCount" Type="int" />
+    <Property Name="Tags" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="CMS_PhotoAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="CoverPhoto" Type="int" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Privacy" Type="smallint" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_PhotoClass">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassName" Type="varchar" MaxLength="200" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="Path" Type="varchar" MaxLength="200" />
+    <Property Name="Depth" Type="int" />
+  </EntityType>
+  <EntityType Name="CMS_PrototypeStore">
+    <Key>
+      <PropertyRef Name="PrototypeStoreID" />
+    </Key>
+    <Property Name="PrototypeStoreID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PrototypeStoreName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PrototypeStoreDesc" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="PrototypeStoreAddress" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="PrototypeStoreTel" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BrandID" Type="int" Nullable="false" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="Orders" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Video">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="AlbumID" Type="int" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdateUserID" Type="int" />
+    <Property Name="LastUpdateDate" Type="datetime" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="VideoClassID" Type="int" />
+    <Property Name="IsRecomend" Type="bit" Nullable="false" />
+    <Property Name="ImageUrl" Type="varchar" MaxLength="100" />
+    <Property Name="ThumbImageUrl" Type="varchar" MaxLength="100" />
+    <Property Name="NormalImageUrl" Type="varchar" MaxLength="100" />
+    <Property Name="TotalTime" Type="int" />
+    <Property Name="TotalComment" Type="int" Nullable="false" />
+    <Property Name="TotalFav" Type="int" Nullable="false" />
+    <Property Name="TotalUp" Type="int" Nullable="false" />
+    <Property Name="Reference" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="varchar" MaxLength="100" />
+    <Property Name="VideoUrl" Type="nvarchar(max)" />
+    <Property Name="UrlType" Type="smallint" Nullable="false" />
+    <Property Name="VideoFormat" Type="varchar" MaxLength="50" />
+    <Property Name="Domain" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Attachment" Type="varchar" MaxLength="100" />
+    <Property Name="Privacy" Type="smallint" Nullable="false" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="300" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_VideoAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CoverVideo" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdateUserID" Type="int" />
+    <Property Name="LastUpdatedDate" Type="datetime" />
+    <Property Name="State" Type="smallint" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Privacy" Type="smallint" />
+    <Property Name="PvCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_VideoClass">
+    <Key>
+      <PropertyRef Name="VideoClassID" />
+    </Key>
+    <Property Name="VideoClassID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VideoClassName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Depth" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_WebMenuConfig">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NavURL" Type="nvarchar(max)" />
+    <Property Name="MenuTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuType" Type="int" />
+    <Property Name="Target" Type="int" />
+    <Property Name="IsUsed" Type="bit" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Visible" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_EmailTemplet">
+    <Key>
+      <PropertyRef Name="EmailType" />
+    </Key>
+    <Property Name="EmailType" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="EmailPriority" Type="int" Nullable="false" />
+    <Property Name="TagDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailSubject" Type="nvarchar" MaxLength="1024" />
+    <Property Name="EmailBody" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Ms_Enterprise">
+    <Key>
+      <PropertyRef Name="EnterpriseID" />
+    </Key>
+    <Property Name="EnterpriseID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Introduction" Type="nvarchar(max)" />
+    <Property Name="RegisteredCapital" Type="int" />
+    <Property Name="TelPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionID" Type="int" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="30" />
+    <Property Name="EstablishedDate" Type="datetime" />
+    <Property Name="EstablishedCity" Type="int" />
+    <Property Name="LOGO" Type="varchar" MaxLength="300" />
+    <Property Name="Fax" Type="varchar" MaxLength="30" />
+    <Property Name="PostCode" Type="varchar" MaxLength="10" />
+    <Property Name="HomePage" Type="varchar" MaxLength="50" />
+    <Property Name="ArtiPerson" Type="varchar" MaxLength="50" />
+    <Property Name="EnteRank" Type="int" />
+    <Property Name="EnteClassID" Type="int" />
+    <Property Name="CompanyType" Type="smallint" />
+    <Property Name="BusinessLicense" Type="varchar" MaxLength="300" />
+    <Property Name="TaxNumber" Type="varchar" MaxLength="300" />
+    <Property Name="AccountBank" Type="varchar" MaxLength="300" />
+    <Property Name="AccountInfo" Type="varchar" MaxLength="300" />
+    <Property Name="ServicePhone" Type="varchar" MaxLength="300" />
+    <Property Name="QQ" Type="varchar" MaxLength="30" />
+    <Property Name="MSN" Type="varchar" MaxLength="30" />
+    <Property Name="Status" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedUserID" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedUserID" Type="int" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="AgentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_EntryForm">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="TelPhone" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="QQ" Type="varchar" MaxLength="50" />
+    <Property Name="MSN" Type="varchar" MaxLength="100" />
+    <Property Name="HouseAddress" Type="varchar" MaxLength="200" />
+    <Property Name="CompanyAddress" Type="varchar" MaxLength="200" />
+    <Property Name="RegionId" Type="int" />
+    <Property Name="Sex" Type="char" MaxLength="10" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Remark" Type="varchar" MaxLength="300" />
+    <Property Name="State" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Ms_Maps">
+    <Key>
+      <PropertyRef Name="MapId" />
+    </Key>
+    <Property Name="MapId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DepartmentId" Type="int" Nullable="false" />
+    <Property Name="PointerLongitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointDimension" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointClass" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointerType" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointerTitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="PointerContent" Type="nvarchar" MaxLength="300" />
+    <Property Name="SearchCity" Type="nvarchar" MaxLength="50" />
+    <Property Name="searchArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="Level" Type="int" />
+    <Property Name="enableKeyboard" Type="bit" />
+    <Property Name="enableScrollWheelZoom" Type="bit" />
+    <Property Name="NavigationControl" Type="bit" />
+    <Property Name="ScaleControl" Type="bit" />
+    <Property Name="MapTypeControl" Type="bit" />
+    <Property Name="MarkersLongitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="MarkersDimension" Type="nvarchar" MaxLength="100" />
+    <Property Name="setAnimation" Type="nvarchar" MaxLength="100" />
+    <Property Name="LoadEvent" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItemzoomIn" Type="bit" />
+    <Property Name="MenuItemzoomOut" Type="bit" />
+    <Property Name="MenuItemsetZoomTop" Type="bit" />
+    <Property Name="MenuItemsetPoint" Type="bit" />
+    <Property Name="MapType" Type="smallint" Nullable="false" />
+    <Property Name="Other1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Other2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Other3" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ms_Regions">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Name="AreaId" Type="int" />
+    <Property Name="RegionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="RegionName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Spell" Type="varchar" MaxLength="50" />
+    <Property Name="SpellShort" Type="varchar" MaxLength="50" />
+    <Property Name="DisplaySequence" Type="int" Nullable="false" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Depth" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_SEORelation">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KeyName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LinkURL" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsCMS" Type="bit" />
+    <Property Name="IsShop" Type="bit" />
+    <Property Name="IsSNS" Type="bit" />
+    <Property Name="IsComment" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Poll_Forms">
+    <Key>
+      <PropertyRef Name="FormID" />
+    </Key>
+    <Property Name="FormID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Description" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Poll_Options">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+    <Property Name="TopicID" Type="int" />
+    <Property Name="isChecked" Type="smallint" />
+    <Property Name="SubmitNum" Type="int" />
+  </EntityType>
+  <EntityType Name="Poll_Reply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TopicID" Type="int" />
+    <Property Name="ReContent" Type="varchar" MaxLength="300" />
+    <Property Name="ReTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Poll_Topics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="Type" Type="smallint" />
+    <Property Name="FormID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MaticsoftFK.dbo.Poll_UserPoll' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Poll_UserPoll">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="TopicID" Type="int" />
+    <Property Name="OptionID" Type="int" />
+    <Property Name="CreatTime" Type="datetime" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Poll_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="binary" MaxLength="50" />
+    <Property Name="TrueName" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Sex" Type="char" MaxLength="2" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="SA_Config_System">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Keyname" Type="varchar" MaxLength="50" />
+    <Property Name="Value" Type="varchar(max)" />
+    <Property Name="KeyType" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SA_Config_Type">
+    <Key>
+      <PropertyRef Name="KeyType" />
+    </Key>
+    <Property Name="KeyType" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SA_ErrorLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OPTime" Type="datetime" />
+    <Property Name="Url" Type="varchar" MaxLength="200" />
+    <Property Name="Loginfo" Type="varchar(max)" />
+    <Property Name="StackTrace" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="SA_Feedback">
+    <Key>
+      <PropertyRef Name="Feedback_iID" />
+    </Key>
+    <Property Name="Feedback_iID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Feedback_cContent" Type="text" Nullable="false" />
+    <Property Name="Feedback_cMail" Type="nvarchar" MaxLength="30" />
+    <Property Name="Feedback_cPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Feedback_cUserName" Type="nvarchar" MaxLength="30" />
+    <Property Name="Feedback_cCompany" Type="nvarchar" MaxLength="50" />
+    <Property Name="Feedback_cUserIP" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Feedback_bSolved" Type="bit" Nullable="false" />
+    <Property Name="Feedback_dateCreate" Type="datetime" Nullable="false" />
+    <Property Name="Feedback_cResult" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SA_FilterWords">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Name="FilterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WordPattern" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsForbid" Type="bit" />
+    <Property Name="IsMod" Type="bit" />
+    <Property Name="RepalceWord" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SA_Language_mstr">
+    <Key>
+      <PropertyRef Name="Language_cCode" />
+    </Key>
+    <Property Name="Language_cCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Language_cName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language_bDefault" Type="bit" />
+    <Property Name="Language_bValid" Type="bit" />
+    <Property Name="Language_dateValid" Type="datetime" />
+    <Property Name="Language_dateExpire" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MaticsoftFK.dbo.SA_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SA_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="datetime" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="datetime" Type="datetime" Nullable="false" />
+    <Property Name="loginfo" Type="varchar" MaxLength="500" />
+    <Property Name="Particular" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="SA_MultiLang_det">
+    <Key>
+      <PropertyRef Name="MultiLang_cField" />
+      <PropertyRef Name="MultiLang_iPKValue" />
+      <PropertyRef Name="MultiLang_cLang" />
+    </Key>
+    <Property Name="MultiLang_iID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MultiLang_cField" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="MultiLang_iPKValue" Type="int" Nullable="false" />
+    <Property Name="MultiLang_cLang" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MultiLang_cValue" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SA_ReceivedMessages">
+    <Key>
+      <PropertyRef Name="ReceiveMessageId" />
+    </Key>
+    <Property Name="ReceiveMessageId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddresserId" Type="int" Nullable="false" />
+    <Property Name="AddresseeId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PublishContent" Type="nvarchar" Nullable="false" MaxLength="3000" />
+    <Property Name="PublishDate" Type="datetime" Nullable="false" />
+    <Property Name="LastTime" Type="datetime" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SA_SendedMessages">
+    <Key>
+      <PropertyRef Name="SendMessageId" />
+    </Key>
+    <Property Name="SendMessageId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddresserId" Type="int" Nullable="false" />
+    <Property Name="AddresseeId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PublishContent" Type="nvarchar" Nullable="false" MaxLength="3000" />
+    <Property Name="PublishDate" Type="datetime" Nullable="false" />
+    <Property Name="ReceiveMessageId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SA_SiteMessage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SenderID" Type="int" />
+    <Property Name="ReceiverID" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="300" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="MsgType" Type="nvarchar" MaxLength="50" />
+    <Property Name="SendTime" Type="datetime" />
+    <Property Name="ReadTime" Type="datetime" />
+    <Property Name="ReceiverIsRead" Type="bit" />
+    <Property Name="SenderIsDel" Type="bit" />
+    <Property Name="ReaderIsDel" Type="bit" />
+    <Property Name="Ext1" Type="nvarchar" MaxLength="300" />
+    <Property Name="Ext2" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="SA_SiteMessageLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MessageID" Type="int" />
+    <Property Name="MessageType" Type="nvarchar" MaxLength="50" />
+    <Property Name="MessageState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReceiverID" Type="int" />
+    <Property Name="Ext1" Type="nvarchar" MaxLength="300" />
+    <Property Name="Ext2" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="SA_SiteSettings">
+    <Key>
+      <PropertyRef Name="SettingsId" />
+    </Key>
+    <Property Name="SettingsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Disabled" Type="bit" Nullable="false" />
+    <Property Name="Version" Type="nvarchar" MaxLength="64" />
+    <Property Name="SettingsXML" Type="ntext" />
+    <Property Name="SettingsKey" Type="uniqueidentifier" />
+    <Property Name="ApplicationName" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="SA_Tree">
+    <Key>
+      <PropertyRef Name="NodeID" />
+    </Key>
+    <Property Name="NodeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TreeText" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="ParentPath" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="50" />
+    <Property Name="Url" Type="varchar" MaxLength="100" />
+    <Property Name="PermissionID" Type="int" />
+    <Property Name="ImageUrl" Type="varchar" MaxLength="100" />
+    <Property Name="ModuleID" Type="int" />
+    <Property Name="KeShiDM" Type="int" />
+    <Property Name="KeshiPublic" Type="varchar" MaxLength="10" />
+    <Property Name="TreeType" Type="smallint" Nullable="false" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SA_TreeFavorite">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="NodeID" Type="int" Nullable="false" />
+    <Property Name="CreatDate" Type="datetime" Nullable="false" />
+    <Property Name="OrderID" Type="int" />
+  </EntityType>
+  <EntityType Name="SA_UserLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OPTime" Type="datetime" />
+    <Property Name="Url" Type="varchar" MaxLength="200" />
+    <Property Name="OPInfo" Type="nvarchar(max)" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="char" MaxLength="2" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SNS_AlbumType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsMenu" Type="bit" Nullable="false" />
+    <Property Name="MenuIsShow" Type="bit" Nullable="false" />
+    <Property Name="MenuSequence" Type="int" Nullable="false" />
+    <Property Name="AlbumsCount" Type="int" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SNS_Categories">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" MaxLength="50" />
+    <Property Name="Depth" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="HasChildren" Type="bit" Nullable="false" />
+    <Property Name="IsMenu" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="MenuIsShow" Type="bit" Nullable="false" />
+    <Property Name="MenuSequence" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="FontColor" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_CategorySource">
+    <Key>
+      <PropertyRef Name="SourceId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="SourceId" Type="int" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Depth" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="HasChildren" Type="bit" Nullable="false" />
+    <Property Name="IsMenu" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="MenuIsShow" Type="bit" Nullable="false" />
+    <Property Name="MenuSequence" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="SnsCategoryId" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_Comments">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="TargetId" Type="int" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HasReferUser" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="ntext" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" />
+    <Property Name="ReplyCount" Type="int" Nullable="false" />
+    <Property Name="UserIP" Type="nvarchar" MaxLength="15" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_FellowTopics">
+    <Key>
+      <PropertyRef Name="TopicTitle" />
+      <PropertyRef Name="CreatedUserId" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TopicTitle" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="CreatedUserId" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_GradeConfig">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Name="GradeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MinRange" Type="int" />
+    <Property Name="MaxRange" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SNS_Groups">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GroupDescription" Type="nvarchar(max)" />
+    <Property Name="GroupUserCount" Type="int" Nullable="false" />
+    <Property Name="CreatedUserId" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="GroupLogo" Type="nvarchar" MaxLength="200" />
+    <Property Name="GroupBackground" Type="nvarchar" MaxLength="200" />
+    <Property Name="ApplyGroupReason" Type="nvarchar(max)" />
+    <Property Name="IsRecommand" Type="smallint" Nullable="false" />
+    <Property Name="TopicCount" Type="int" Nullable="false" />
+    <Property Name="TopicReplyCount" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Privacy" Type="smallint" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+    <Property Name="GroupLogoThumb" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsRecommand" Type="smallint" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopicFav">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="TopicID" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopicReply">
+    <Key>
+      <PropertyRef Name="ReplyID" />
+    </Key>
+    <Property Name="ReplyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="ReplyType" Type="int" Nullable="false" />
+    <Property Name="ReplyNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReplyUserID" Type="int" Nullable="false" />
+    <Property Name="OriginalID" Type="int" Nullable="false" />
+    <Property Name="OrginalDes" Type="nvarchar(max)" />
+    <Property Name="OrginalUserID" Type="int" Nullable="false" />
+    <Property Name="OrgianlNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TopicID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="HasReferUsers" Type="bit" />
+    <Property Name="PhotoUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="TargetId" Type="int" />
+    <Property Name="Type" Type="int" />
+    <Property Name="ProductUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReplyExUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="ProductLinkUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="FavCount" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" />
+    <Property Name="UserIP" Type="nvarchar" MaxLength="15" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopics">
+    <Key>
+      <PropertyRef Name="TopicID" />
+    </Key>
+    <Property Name="TopicID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsRecomend" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="ReplyCount" Type="int" Nullable="false" />
+    <Property Name="PvCount" Type="int" Nullable="false" />
+    <Property Name="DingCount" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsTop" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsAdminRecommend" Type="bit" Nullable="false" />
+    <Property Name="ChannelSequence" Type="int" />
+    <Property Name="HasReferUsers" Type="bit" Nullable="false" />
+    <Property Name="PostExUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="VideoUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="AudioUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Price" Type="decimal" />
+    <Property Name="ProductLinkUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="TargetID" Type="int" />
+    <Property Name="FavCount" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastReplyUserId" Type="int" />
+    <Property Name="LastReplyNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastPostTime" Type="datetime" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_GroupUsers">
+    <Key>
+      <PropertyRef Name="GroupID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="NickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="JoinTime" Type="datetime" Nullable="false" />
+    <Property Name="Role" Type="int" Nullable="false" />
+    <Property Name="ApplyReason" Type="nvarchar(max)" />
+    <Property Name="IsRecommend" Type="bit" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_GuestBook">
+    <Key>
+      <PropertyRef Name="GuestBookID" />
+    </Key>
+    <Property Name="GuestBookID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreateUserID" Type="int" Nullable="false" />
+    <Property Name="CreateNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToUserID" Type="int" Nullable="false" />
+    <Property Name="ToNickName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Description" Type="text" />
+    <Property Name="UserIP" Type="nvarchar" MaxLength="15" />
+    <Property Name="Privacy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Path" Type="nvarchar" MaxLength="100" />
+    <Property Name="Depth" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_HotWords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KeyWord" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsRecommend" Type="bit" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_OnLineShopPhoto">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="PhotoID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="CreatedUserId" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Photos">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoName" Type="nvarchar" MaxLength="200" />
+    <Property Name="PhotoUrl" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="NormalImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="IsRecomend" Type="int" />
+    <Property Name="ForwardedCount" Type="int" Nullable="false" />
+    <Property Name="CommentCount" Type="int" Nullable="false" />
+    <Property Name="FavouriteCount" Type="int" Nullable="false" />
+    <Property Name="OwnerPhotoId" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+    <Property Name="TopCommentsId" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_PhotoTags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsRecommand" Type="smallint" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_Posts">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OriginalID" Type="int" Nullable="false" />
+    <Property Name="ForwardedID" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="HasReferUsers" Type="bit" Nullable="false" />
+    <Property Name="CommentCount" Type="int" Nullable="false" />
+    <Property Name="ForwardCount" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" />
+    <Property Name="PostExUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="VideoUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="AudioUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="TargetId" Type="int" />
+    <Property Name="TopicTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="Price" Type="decimal" />
+    <Property Name="ProductLinkUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FavCount" Type="int" />
+    <Property Name="UserIP" Type="nvarchar" MaxLength="15" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsRecommend" Type="bit" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_PostsTopics">
+    <Key>
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="TopicsCount" Type="int" Nullable="false" />
+    <Property Name="IsRecommend" Type="bit" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="ProductDescription" Type="nvarchar(max)" />
+    <Property Name="Price" Type="decimal" />
+    <Property Name="ProductSourceID" Type="int" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="ProductUrl" Type="nvarchar(max)" />
+    <Property Name="FavouriteCount" Type="int" Nullable="false" />
+    <Property Name="GroupBuyCount" Type="int" />
+    <Property Name="CreateUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThumbImageUrl" Type="varchar" MaxLength="300" />
+    <Property Name="NormalImageUrl" Type="varchar" MaxLength="300" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="IsRecomend" Type="int" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="CommentCount" Type="int" Nullable="false" />
+    <Property Name="ForwardedCount" Type="int" />
+    <Property Name="ShareDescription" Type="nvarchar" MaxLength="200" />
+    <Property Name="SkipCount" Type="int" Nullable="false" />
+    <Property Name="OwnerProductId" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="400" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="TopCommentsId" Type="nvarchar" MaxLength="100" />
+    <Property Name="Color" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_ProductSources">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WebSiteName" Type="nvarchar" MaxLength="100" />
+    <Property Name="WebSiteUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="WebSiteLogo" Type="nvarchar" MaxLength="200" />
+    <Property Name="CategoryTags" Type="nvarchar(max)" />
+    <Property Name="PriceTags" Type="nvarchar(max)" />
+    <Property Name="ImagesTag" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_ReferUsers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TagetID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="ReferUserID" Type="int" Nullable="false" />
+    <Property Name="ReferNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Report">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ReportTypeID" Type="int" Nullable="false" />
+    <Property Name="TargetType" Type="int" Nullable="false" />
+    <Property Name="TargetID" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_ReportType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_SearchWordLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SearchWord" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedUserId" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_SearchWordTop">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HotWord" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="TimeUnit" Type="int" Nullable="false" />
+    <Property Name="DateStart" Type="datetime" />
+    <Property Name="DateEnd" Type="datetime" />
+    <Property Name="SearchCount" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Star">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="NickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserGravatar" Type="nvarchar" MaxLength="200" />
+    <Property Name="ApplyReason" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="datetime" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_StarRank">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="TypeId" Type="int" Nullable="false" />
+    <Property Name="NickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsRecommend" Type="bit" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="TimeUnit" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="RankDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="UserGravatar" Type="nvarchar" MaxLength="200" />
+    <Property Name="RankType" Type="smallint" />
+  </EntityType>
+  <EntityType Name="SNS_StarType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CheckRule" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_Tags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsRecommand" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_TagType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cid" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbumDetail">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+      <PropertyRef Name="TargetID" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumID" Type="int" Nullable="false" />
+    <Property Name="TargetID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="AlbumUserId" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbums">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CoverTargetID" Type="int" />
+    <Property Name="CoverPhotoUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="CoverTargetType" Type="int" />
+    <Property Name="Status" Type="smallint" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhotoCount" Type="int" Nullable="false" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="FavouriteCount" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CommentsCount" Type="int" />
+    <Property Name="IsRecommend" Type="smallint" Nullable="false" />
+    <Property Name="ChannelSequence" Type="int" Nullable="false" />
+    <Property Name="Privacy" Type="int" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbumsType">
+    <Key>
+      <PropertyRef Name="AlbumsID" />
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="AlbumsID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="AlbumsUserID" Type="int" />
+  </EntityType>
+  <EntityType Name="SNS_UserFavAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_UserFavourite">
+    <Key>
+      <PropertyRef Name="FavouriteID" />
+    </Key>
+    <Property Name="FavouriteID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TargetID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="OwnerUserID" Type="int" />
+    <Property Name="OwnerNickName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_UserShip">
+    <Key>
+      <PropertyRef Name="ActiveUserID" />
+      <PropertyRef Name="PassiveUserID" />
+    </Key>
+    <Property Name="ActiveUserID" Type="int" Nullable="false" />
+    <Property Name="PassiveUserID" Type="int" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_UserShipCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Privacy" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Videos">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VideoName" Type="nvarchar" MaxLength="200" />
+    <Property Name="VideoUrl" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedUserID" Type="int" Nullable="false" />
+    <Property Name="CreatedNickName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="PVCount" Type="int" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="NormalImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="IsRecomend" Type="int" Nullable="false" />
+    <Property Name="ForwardedCount" Type="int" Nullable="false" />
+    <Property Name="CommentCount" Type="int" Nullable="false" />
+    <Property Name="FavouriteCount" Type="int" Nullable="false" />
+    <Property Name="OwnerVideoId" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SNS_VisiteLogs">
+    <Key>
+      <PropertyRef Name="VisitID" />
+    </Key>
+    <Property Name="VisitID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromUserID" Type="int" Nullable="false" />
+    <Property Name="FromNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ToUserID" Type="int" Nullable="false" />
+    <Property Name="ToNickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="VisitTimes" Type="int" />
+    <Property Name="LastVisitTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Accounts_Actions_Permission_Accounts_Permissions">
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Store.Accounts_Permissions" Multiplicity="0..1" />
+    <End Role="Accounts_Actions_Permission" Type="MaticsoftFKModel.Store.Accounts_Actions_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Permissions">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="Accounts_Actions_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_MailConfig_Accounts_Users">
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Store.Accounts_Users" Multiplicity="1" />
+    <End Role="Accounts_MailConfig" Type="MaticsoftFKModel.Store.Accounts_MailConfig" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Accounts_MailConfig">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_Permissions_Accounts_PermissionCategories">
+    <End Role="Accounts_PermissionCategories" Type="MaticsoftFKModel.Store.Accounts_PermissionCategories" Multiplicity="0..1" />
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Store.Accounts_Permissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PermissionCategories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Accounts_Permissions">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_PointsDetail_Accounts_PointsRule">
+    <End Role="Accounts_PointsRule" Type="MaticsoftFKModel.Store.Accounts_PointsRule" Multiplicity="1" />
+    <End Role="Accounts_PointsDetail" Type="MaticsoftFKModel.Store.Accounts_PointsDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PointsRule">
+        <PropertyRef Name="RuleAction" />
+      </Principal>
+      <Dependent Role="Accounts_PointsDetail">
+        <PropertyRef Name="RuleAction" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_PointsRule_Accounts_PointsLimit">
+    <End Role="Accounts_PointsLimit" Type="MaticsoftFKModel.Store.Accounts_PointsLimit" Multiplicity="1" />
+    <End Role="Accounts_PointsRule" Type="MaticsoftFKModel.Store.Accounts_PointsRule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PointsLimit">
+        <PropertyRef Name="PointsLimitID" />
+      </Principal>
+      <Dependent Role="Accounts_PointsRule">
+        <PropertyRef Name="PointsLimitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_RolePermissions_Accounts_Permissions">
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Store.Accounts_Permissions" Multiplicity="1" />
+    <End Role="Accounts_RolePermissions" Type="MaticsoftFKModel.Store.Accounts_RolePermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Permissions">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="Accounts_RolePermissions">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_RolePermissions_Accounts_Roles">
+    <End Role="Accounts_Roles" Type="MaticsoftFKModel.Store.Accounts_Roles" Multiplicity="1" />
+    <End Role="Accounts_RolePermissions" Type="MaticsoftFKModel.Store.Accounts_RolePermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Accounts_RolePermissions">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_UserRoles_Accounts_Roles">
+    <End Role="Accounts_Roles" Type="MaticsoftFKModel.Store.Accounts_Roles" Multiplicity="1" />
+    <End Role="Accounts_UserRoles" Type="MaticsoftFKModel.Store.Accounts_UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Accounts_UserRoles">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_UserRoles_Accounts_Users">
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Store.Accounts_Users" Multiplicity="1" />
+    <End Role="Accounts_UserRoles" Type="MaticsoftFKModel.Store.Accounts_UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Accounts_UserRoles">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SA_TreeFavorite_Accounts_Users">
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Store.Accounts_Users" Multiplicity="1" />
+    <End Role="SA_TreeFavorite" Type="MaticsoftFKModel.Store.SA_TreeFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SA_TreeFavorite">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.Store.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_SNS_Photos">
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.Store.SNS_Photos" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.Store.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Photos">
+        <PropertyRef Name="PhotoID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="TargetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_SNS_Posts">
+    <End Role="SNS_Posts" Type="MaticsoftFKModel.Store.SNS_Posts" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.Store.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Posts">
+        <PropertyRef Name="PostID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="TargetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_FellowTopics_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_FellowTopics" Type="MaticsoftFKModel.Store.SNS_FellowTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_FellowTopics">
+        <PropertyRef Name="CreatedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_FellowTopics_SNS_PostTopics">
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.Store.SNS_PostsTopics" Multiplicity="1" />
+    <End Role="SNS_FellowTopics" Type="MaticsoftFKModel.Store.SNS_FellowTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_PostsTopics">
+        <PropertyRef Name="Title" />
+      </Principal>
+      <Dependent Role="SNS_FellowTopics">
+        <PropertyRef Name="TopicTitle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Group_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.Store.SNS_Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Groups">
+        <PropertyRef Name="CreatedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopic_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.Store.SNS_GroupTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopicReply_SNS_Groups">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.Store.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.Store.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopics_SNS_Groups">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.Store.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.Store.SNS_GroupTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopics">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupUser_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupUsers" Type="MaticsoftFKModel.Store.SNS_GroupUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupUsers">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupUser_SNS_Group">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.Store.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupUsers" Type="MaticsoftFKModel.Store.SNS_GroupUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupUsers">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GuestBook_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GuestBook" Type="MaticsoftFKModel.Store.SNS_GuestBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GuestBook">
+        <PropertyRef Name="CreateUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GuestBook_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GuestBook" Type="MaticsoftFKModel.Store.SNS_GuestBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GuestBook">
+        <PropertyRef Name="ToUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Photo_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.Store.SNS_Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Photos">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PhotoAlbum_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.Store.SNS_UserAlbums" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbums">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Photos_SNS_Categories">
+    <End Role="SNS_Categories" Type="MaticsoftFKModel.Store.SNS_Categories" Multiplicity="0..1" />
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.Store.SNS_Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Categories">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="SNS_Photos">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Post_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Posts" Type="MaticsoftFKModel.Store.SNS_Posts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Posts">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PostTopics_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.Store.SNS_PostsTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_PostsTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PostTopics_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.Store.SNS_PostsTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_PostsTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Product_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Products" Type="MaticsoftFKModel.Store.SNS_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Products">
+        <PropertyRef Name="CreateUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Products_SNS_ProductSources">
+    <End Role="SNS_ProductSources" Type="MaticsoftFKModel.Store.SNS_ProductSources" Multiplicity="0..1" />
+    <End Role="SNS_Products" Type="MaticsoftFKModel.Store.SNS_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_ProductSources">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Products">
+        <PropertyRef Name="ProductSourceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_ReferUsers_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_ReferUsers" Type="MaticsoftFKModel.Store.SNS_ReferUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_ReferUsers">
+        <PropertyRef Name="ReferUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Report_SNS_ReportType">
+    <End Role="SNS_ReportType" Type="MaticsoftFKModel.Store.SNS_ReportType" Multiplicity="1" />
+    <End Role="SNS_Report" Type="MaticsoftFKModel.Store.SNS_Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_ReportType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Report">
+        <PropertyRef Name="ReportTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.Store.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.Store.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_SNS_StarType">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.Store.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.Store.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_SNS_StarType1">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.Store.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.Store.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_StarRank_SNS_StarType">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.Store.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_StarRank" Type="MaticsoftFKModel.Store.SNS_StarRank" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_StarRank">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Tags_SNS_TagType">
+    <End Role="SNS_TagType" Type="MaticsoftFKModel.Store.SNS_TagType" Multiplicity="1" />
+    <End Role="SNS_Tags" Type="MaticsoftFKModel.Store.SNS_Tags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_TagType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Tags">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.Store.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.Store.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_SNS_GroupTopic">
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.Store.SNS_GroupTopics" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.Store.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_GroupTopics">
+        <PropertyRef Name="TopicID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.Store.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="ReplyUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.Store.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="OrginalUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_SNS_GroupTopic">
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.Store.SNS_GroupTopics" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.Store.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_GroupTopics">
+        <PropertyRef Name="TopicID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_Photos">
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.Store.SNS_Photos" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.Store.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Photos">
+        <PropertyRef Name="PhotoID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="TargetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_UserAlbums">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.Store.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.Store.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_Videos">
+    <End Role="SNS_Videos" Type="MaticsoftFKModel.Store.SNS_Videos" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.Store.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Videos">
+        <PropertyRef Name="VideoID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="TargetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumsType_SNS_AlbumType">
+    <End Role="SNS_AlbumType" Type="MaticsoftFKModel.Store.SNS_AlbumType" Multiplicity="1" />
+    <End Role="SNS_UserAlbumsType" Type="MaticsoftFKModel.Store.SNS_UserAlbumsType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_AlbumType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumsType">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumsType_SNS_UserAlbums">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.Store.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserAlbumsType" Type="MaticsoftFKModel.Store.SNS_UserAlbumsType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumsType">
+        <PropertyRef Name="AlbumsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserFavAlbum_SNS_UserAlbum">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.Store.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserFavAlbum" Type="MaticsoftFKModel.Store.SNS_UserFavAlbum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserFavAlbum">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserFavourite_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserFavourite" Type="MaticsoftFKModel.Store.SNS_UserFavourite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserFavourite">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserShipCategories_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserShipCategories" Type="MaticsoftFKModel.Store.SNS_UserShipCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserShipCategories">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Videos_SNS_Categories">
+    <End Role="SNS_Categories" Type="MaticsoftFKModel.Store.SNS_Categories" Multiplicity="0..1" />
+    <End Role="SNS_Videos" Type="MaticsoftFKModel.Store.SNS_Videos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Categories">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="SNS_Videos">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_VisiteLogs_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_VisiteLogs" Type="MaticsoftFKModel.Store.SNS_VisiteLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_VisiteLogs">
+        <PropertyRef Name="FromUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_VisiteLogs_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Store.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_VisiteLogs" Type="MaticsoftFKModel.Store.SNS_VisiteLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_VisiteLogs">
+        <PropertyRef Name="ToUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

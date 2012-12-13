@@ -1,0 +1,2656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MaticsoftFKModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TechEasyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts_Actions_Permission" EntityType="MaticsoftFKModel.Accounts_Actions_Permission" />
+    <EntitySet Name="Accounts_EmailQueue" EntityType="MaticsoftFKModel.Accounts_EmailQueue" />
+    <EntitySet Name="Accounts_MailConfig" EntityType="MaticsoftFKModel.Accounts_MailConfig" />
+    <EntitySet Name="Accounts_PermissionCategories" EntityType="MaticsoftFKModel.Accounts_PermissionCategories" />
+    <EntitySet Name="Accounts_Permissions" EntityType="MaticsoftFKModel.Accounts_Permissions" />
+    <EntitySet Name="Accounts_PointsDetail" EntityType="MaticsoftFKModel.Accounts_PointsDetail" />
+    <EntitySet Name="Accounts_PointsLimit" EntityType="MaticsoftFKModel.Accounts_PointsLimit" />
+    <EntitySet Name="Accounts_PointsRule" EntityType="MaticsoftFKModel.Accounts_PointsRule" />
+    <EntitySet Name="Accounts_Roles" EntityType="MaticsoftFKModel.Accounts_Roles" />
+    <EntitySet Name="Accounts_UserAssignmentRoles" EntityType="MaticsoftFKModel.Accounts_UserAssignmentRoles" />
+    <EntitySet Name="Accounts_UserBind" EntityType="MaticsoftFKModel.Accounts_UserBind" />
+    <EntitySet Name="Accounts_UserRank" EntityType="MaticsoftFKModel.Accounts_UserRank" />
+    <EntitySet Name="Accounts_Users" EntityType="MaticsoftFKModel.Accounts_Users" />
+    <EntitySet Name="Accounts_UsersApprove" EntityType="MaticsoftFKModel.Accounts_UsersApprove" />
+    <EntitySet Name="Accounts_UsersExp" EntityType="MaticsoftFKModel.Accounts_UsersExp" />
+    <EntitySet Name="Accounts_UserType" EntityType="MaticsoftFKModel.Accounts_UserType" />
+    <EntitySet Name="Accounts_VerifyMail" EntityType="MaticsoftFKModel.Accounts_VerifyMail" />
+    <EntitySet Name="AD_Advertisement" EntityType="MaticsoftFKModel.AD_Advertisement" />
+    <EntitySet Name="AD_AdvertisePosition" EntityType="MaticsoftFKModel.AD_AdvertisePosition" />
+    <EntitySet Name="CMS_Brand" EntityType="MaticsoftFKModel.CMS_Brand" />
+    <EntitySet Name="CMS_ClassType" EntityType="MaticsoftFKModel.CMS_ClassType" />
+    <EntitySet Name="CMS_Comment" EntityType="MaticsoftFKModel.CMS_Comment" />
+    <EntitySet Name="CMS_Content" EntityType="MaticsoftFKModel.CMS_Content" />
+    <EntitySet Name="CMS_ContentClass" EntityType="MaticsoftFKModel.CMS_ContentClass" />
+    <EntitySet Name="CMS_FLinks" EntityType="MaticsoftFKModel.CMS_FLinks" />
+    <EntitySet Name="CMS_Guestbook" EntityType="MaticsoftFKModel.CMS_Guestbook" />
+    <EntitySet Name="CMS_Photo" EntityType="MaticsoftFKModel.CMS_Photo" />
+    <EntitySet Name="CMS_PhotoAlbum" EntityType="MaticsoftFKModel.CMS_PhotoAlbum" />
+    <EntitySet Name="CMS_PhotoClass" EntityType="MaticsoftFKModel.CMS_PhotoClass" />
+    <EntitySet Name="CMS_PrototypeStore" EntityType="MaticsoftFKModel.CMS_PrototypeStore" />
+    <EntitySet Name="CMS_Video" EntityType="MaticsoftFKModel.CMS_Video" />
+    <EntitySet Name="CMS_VideoAlbum" EntityType="MaticsoftFKModel.CMS_VideoAlbum" />
+    <EntitySet Name="CMS_VideoClass" EntityType="MaticsoftFKModel.CMS_VideoClass" />
+    <EntitySet Name="CMS_WebMenuConfig" EntityType="MaticsoftFKModel.CMS_WebMenuConfig" />
+    <EntitySet Name="Ms_EmailTemplet" EntityType="MaticsoftFKModel.Ms_EmailTemplet" />
+    <EntitySet Name="Ms_Enterprise" EntityType="MaticsoftFKModel.Ms_Enterprise" />
+    <EntitySet Name="Ms_EntryForm" EntityType="MaticsoftFKModel.Ms_EntryForm" />
+    <EntitySet Name="Ms_Maps" EntityType="MaticsoftFKModel.Ms_Maps" />
+    <EntitySet Name="Ms_Regions" EntityType="MaticsoftFKModel.Ms_Regions" />
+    <EntitySet Name="Ms_SEORelation" EntityType="MaticsoftFKModel.Ms_SEORelation" />
+    <EntitySet Name="Poll_Forms" EntityType="MaticsoftFKModel.Poll_Forms" />
+    <EntitySet Name="Poll_Options" EntityType="MaticsoftFKModel.Poll_Options" />
+    <EntitySet Name="Poll_Reply" EntityType="MaticsoftFKModel.Poll_Reply" />
+    <EntitySet Name="Poll_Topics" EntityType="MaticsoftFKModel.Poll_Topics" />
+    <EntitySet Name="Poll_UserPoll" EntityType="MaticsoftFKModel.Poll_UserPoll" />
+    <EntitySet Name="Poll_Users" EntityType="MaticsoftFKModel.Poll_Users" />
+    <EntitySet Name="SA_Config_System" EntityType="MaticsoftFKModel.SA_Config_System" />
+    <EntitySet Name="SA_Config_Type" EntityType="MaticsoftFKModel.SA_Config_Type" />
+    <EntitySet Name="SA_ErrorLog" EntityType="MaticsoftFKModel.SA_ErrorLog" />
+    <EntitySet Name="SA_Feedback" EntityType="MaticsoftFKModel.SA_Feedback" />
+    <EntitySet Name="SA_FilterWords" EntityType="MaticsoftFKModel.SA_FilterWords" />
+    <EntitySet Name="SA_Language_mstr" EntityType="MaticsoftFKModel.SA_Language_mstr" />
+    <EntitySet Name="SA_Log" EntityType="MaticsoftFKModel.SA_Log" />
+    <EntitySet Name="SA_MultiLang_det" EntityType="MaticsoftFKModel.SA_MultiLang_det" />
+    <EntitySet Name="SA_ReceivedMessages" EntityType="MaticsoftFKModel.SA_ReceivedMessages" />
+    <EntitySet Name="SA_SendedMessages" EntityType="MaticsoftFKModel.SA_SendedMessages" />
+    <EntitySet Name="SA_SiteMessage" EntityType="MaticsoftFKModel.SA_SiteMessage" />
+    <EntitySet Name="SA_SiteMessageLog" EntityType="MaticsoftFKModel.SA_SiteMessageLog" />
+    <EntitySet Name="SA_SiteSettings" EntityType="MaticsoftFKModel.SA_SiteSettings" />
+    <EntitySet Name="SA_Tree" EntityType="MaticsoftFKModel.SA_Tree" />
+    <EntitySet Name="SA_TreeFavorite" EntityType="MaticsoftFKModel.SA_TreeFavorite" />
+    <EntitySet Name="SA_UserLog" EntityType="MaticsoftFKModel.SA_UserLog" />
+    <EntitySet Name="SNS_AlbumType" EntityType="MaticsoftFKModel.SNS_AlbumType" />
+    <EntitySet Name="SNS_Categories" EntityType="MaticsoftFKModel.SNS_Categories" />
+    <EntitySet Name="SNS_CategorySource" EntityType="MaticsoftFKModel.SNS_CategorySource" />
+    <EntitySet Name="SNS_Comments" EntityType="MaticsoftFKModel.SNS_Comments" />
+    <EntitySet Name="SNS_FellowTopics" EntityType="MaticsoftFKModel.SNS_FellowTopics" />
+    <EntitySet Name="SNS_GradeConfig" EntityType="MaticsoftFKModel.SNS_GradeConfig" />
+    <EntitySet Name="SNS_Groups" EntityType="MaticsoftFKModel.SNS_Groups" />
+    <EntitySet Name="SNS_GroupTags" EntityType="MaticsoftFKModel.SNS_GroupTags" />
+    <EntitySet Name="SNS_GroupTopicFav" EntityType="MaticsoftFKModel.SNS_GroupTopicFav" />
+    <EntitySet Name="SNS_GroupTopicReply" EntityType="MaticsoftFKModel.SNS_GroupTopicReply" />
+    <EntitySet Name="SNS_GroupTopics" EntityType="MaticsoftFKModel.SNS_GroupTopics" />
+    <EntitySet Name="SNS_GroupUsers" EntityType="MaticsoftFKModel.SNS_GroupUsers" />
+    <EntitySet Name="SNS_GuestBook" EntityType="MaticsoftFKModel.SNS_GuestBook" />
+    <EntitySet Name="SNS_HotWords" EntityType="MaticsoftFKModel.SNS_HotWords" />
+    <EntitySet Name="SNS_OnLineShopPhoto" EntityType="MaticsoftFKModel.SNS_OnLineShopPhoto" />
+    <EntitySet Name="SNS_Photos" EntityType="MaticsoftFKModel.SNS_Photos" />
+    <EntitySet Name="SNS_PhotoTags" EntityType="MaticsoftFKModel.SNS_PhotoTags" />
+    <EntitySet Name="SNS_Posts" EntityType="MaticsoftFKModel.SNS_Posts" />
+    <EntitySet Name="SNS_PostsTopics" EntityType="MaticsoftFKModel.SNS_PostsTopics" />
+    <EntitySet Name="SNS_Products" EntityType="MaticsoftFKModel.SNS_Products" />
+    <EntitySet Name="SNS_ProductSources" EntityType="MaticsoftFKModel.SNS_ProductSources" />
+    <EntitySet Name="SNS_ReferUsers" EntityType="MaticsoftFKModel.SNS_ReferUsers" />
+    <EntitySet Name="SNS_Report" EntityType="MaticsoftFKModel.SNS_Report" />
+    <EntitySet Name="SNS_ReportType" EntityType="MaticsoftFKModel.SNS_ReportType" />
+    <EntitySet Name="SNS_SearchWordLog" EntityType="MaticsoftFKModel.SNS_SearchWordLog" />
+    <EntitySet Name="SNS_SearchWordTop" EntityType="MaticsoftFKModel.SNS_SearchWordTop" />
+    <EntitySet Name="SNS_Star" EntityType="MaticsoftFKModel.SNS_Star" />
+    <EntitySet Name="SNS_StarRank" EntityType="MaticsoftFKModel.SNS_StarRank" />
+    <EntitySet Name="SNS_StarType" EntityType="MaticsoftFKModel.SNS_StarType" />
+    <EntitySet Name="SNS_Tags" EntityType="MaticsoftFKModel.SNS_Tags" />
+    <EntitySet Name="SNS_TagType" EntityType="MaticsoftFKModel.SNS_TagType" />
+    <EntitySet Name="SNS_UserAlbumDetail" EntityType="MaticsoftFKModel.SNS_UserAlbumDetail" />
+    <EntitySet Name="SNS_UserAlbums" EntityType="MaticsoftFKModel.SNS_UserAlbums" />
+    <EntitySet Name="SNS_UserAlbumsType" EntityType="MaticsoftFKModel.SNS_UserAlbumsType" />
+    <EntitySet Name="SNS_UserFavAlbum" EntityType="MaticsoftFKModel.SNS_UserFavAlbum" />
+    <EntitySet Name="SNS_UserFavourite" EntityType="MaticsoftFKModel.SNS_UserFavourite" />
+    <EntitySet Name="SNS_UserShip" EntityType="MaticsoftFKModel.SNS_UserShip" />
+    <EntitySet Name="SNS_UserShipCategories" EntityType="MaticsoftFKModel.SNS_UserShipCategories" />
+    <EntitySet Name="SNS_Videos" EntityType="MaticsoftFKModel.SNS_Videos" />
+    <EntitySet Name="SNS_VisiteLogs" EntityType="MaticsoftFKModel.SNS_VisiteLogs" />
+    <AssociationSet Name="FK_Accounts_Actions_Permission_Accounts_Permissions" Association="MaticsoftFKModel.FK_Accounts_Actions_Permission_Accounts_Permissions">
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+      <End Role="Accounts_Actions_Permission" EntitySet="Accounts_Actions_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_MailConfig_Accounts_Users" Association="MaticsoftFKModel.FK_Accounts_MailConfig_Accounts_Users">
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+      <End Role="Accounts_MailConfig" EntitySet="Accounts_MailConfig" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_Permissions_Accounts_PermissionCategories" Association="MaticsoftFKModel.FK_Accounts_Permissions_Accounts_PermissionCategories">
+      <End Role="Accounts_PermissionCategories" EntitySet="Accounts_PermissionCategories" />
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_PointsDetail_Accounts_PointsRule" Association="MaticsoftFKModel.FK_Accounts_PointsDetail_Accounts_PointsRule">
+      <End Role="Accounts_PointsRule" EntitySet="Accounts_PointsRule" />
+      <End Role="Accounts_PointsDetail" EntitySet="Accounts_PointsDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Accounts_PointsRule_Accounts_PointsLimit" Association="MaticsoftFKModel.FK_Accounts_PointsRule_Accounts_PointsLimit">
+      <End Role="Accounts_PointsLimit" EntitySet="Accounts_PointsLimit" />
+      <End Role="Accounts_PointsRule" EntitySet="Accounts_PointsRule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SA_TreeFavorite_Accounts_Users" Association="MaticsoftFKModel.FK_SA_TreeFavorite_Accounts_Users">
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+      <End Role="SA_TreeFavorite" EntitySet="SA_TreeFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Comments_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_FellowTopics_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_FellowTopics_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_FellowTopics" EntitySet="SNS_FellowTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Group_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Group_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopic_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_GroupTopic_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupUser_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_GroupUser_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupUsers" EntitySet="SNS_GroupUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GuestBook_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GuestBook" EntitySet="SNS_GuestBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GuestBook_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GuestBook" EntitySet="SNS_GuestBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Photo_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Photo_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PhotoAlbum_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_PhotoAlbum_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Post_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Post_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Posts" EntitySet="SNS_Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PostTopics_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_PostTopics_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Product_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Product_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Products" EntitySet="SNS_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_ReferUsers_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_ReferUsers_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_ReferUsers" EntitySet="SNS_ReferUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserFavourite_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_UserFavourite_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserFavourite" EntitySet="SNS_UserFavourite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserShipCategories_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_UserShipCategories_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_UserShipCategories" EntitySet="SNS_UserShipCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_VisiteLogs_Accounts_UsersExp" Association="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_VisiteLogs" EntitySet="SNS_VisiteLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_VisiteLogs_Accounts_UsersExp1" Association="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp1">
+      <End Role="Accounts_UsersExp" EntitySet="Accounts_UsersExp" />
+      <End Role="SNS_VisiteLogs" EntitySet="SNS_VisiteLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumsType_SNS_AlbumType" Association="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_AlbumType">
+      <End Role="SNS_AlbumType" EntitySet="SNS_AlbumType" />
+      <End Role="SNS_UserAlbumsType" EntitySet="SNS_UserAlbumsType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Photos_SNS_Categories" Association="MaticsoftFKModel.FK_SNS_Photos_SNS_Categories">
+      <End Role="SNS_Categories" EntitySet="SNS_Categories" />
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Videos_SNS_Categories" Association="MaticsoftFKModel.FK_SNS_Videos_SNS_Categories">
+      <End Role="SNS_Categories" EntitySet="SNS_Categories" />
+      <End Role="SNS_Videos" EntitySet="SNS_Videos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_SNS_Photos" Association="MaticsoftFKModel.FK_SNS_Comments_SNS_Photos">
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Comments_SNS_Posts" Association="MaticsoftFKModel.FK_SNS_Comments_SNS_Posts">
+      <End Role="SNS_Posts" EntitySet="SNS_Posts" />
+      <End Role="SNS_Comments" EntitySet="SNS_Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_FellowTopics_SNS_PostTopics" Association="MaticsoftFKModel.FK_SNS_FellowTopics_SNS_PostTopics">
+      <End Role="SNS_PostsTopics" EntitySet="SNS_PostsTopics" />
+      <End Role="SNS_FellowTopics" EntitySet="SNS_FellowTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopicReply_SNS_Groups" Association="MaticsoftFKModel.FK_SNS_GroupTopicReply_SNS_Groups">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupTopics_SNS_Groups" Association="MaticsoftFKModel.FK_SNS_GroupTopics_SNS_Groups">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_GroupUser_SNS_Group" Association="MaticsoftFKModel.FK_SNS_GroupUser_SNS_Group">
+      <End Role="SNS_Groups" EntitySet="SNS_Groups" />
+      <End Role="SNS_GroupUsers" EntitySet="SNS_GroupUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicCollection_SNS_GroupTopic" Association="MaticsoftFKModel.FK_SNS_TopicCollection_SNS_GroupTopic">
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+      <End Role="SNS_GroupTopicFav" EntitySet="SNS_GroupTopicFav" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_TopicReply_SNS_GroupTopic" Association="MaticsoftFKModel.FK_SNS_TopicReply_SNS_GroupTopic">
+      <End Role="SNS_GroupTopics" EntitySet="SNS_GroupTopics" />
+      <End Role="SNS_GroupTopicReply" EntitySet="SNS_GroupTopicReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_Photos" Association="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Photos">
+      <End Role="SNS_Photos" EntitySet="SNS_Photos" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Products_SNS_ProductSources" Association="MaticsoftFKModel.FK_SNS_Products_SNS_ProductSources">
+      <End Role="SNS_ProductSources" EntitySet="SNS_ProductSources" />
+      <End Role="SNS_Products" EntitySet="SNS_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Report_SNS_ReportType" Association="MaticsoftFKModel.FK_SNS_Report_SNS_ReportType">
+      <End Role="SNS_ReportType" EntitySet="SNS_ReportType" />
+      <End Role="SNS_Report" EntitySet="SNS_Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_SNS_StarType" Association="MaticsoftFKModel.FK_SNS_Star_SNS_StarType">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Star_SNS_StarType1" Association="MaticsoftFKModel.FK_SNS_Star_SNS_StarType1">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_Star" EntitySet="SNS_Star" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_StarRank_SNS_StarType" Association="MaticsoftFKModel.FK_SNS_StarRank_SNS_StarType">
+      <End Role="SNS_StarType" EntitySet="SNS_StarType" />
+      <End Role="SNS_StarRank" EntitySet="SNS_StarRank" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_Tags_SNS_TagType" Association="MaticsoftFKModel.FK_SNS_Tags_SNS_TagType">
+      <End Role="SNS_TagType" EntitySet="SNS_TagType" />
+      <End Role="SNS_Tags" EntitySet="SNS_Tags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_UserAlbums" Association="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_UserAlbums">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumDetail_SNS_Videos" Association="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Videos">
+      <End Role="SNS_Videos" EntitySet="SNS_Videos" />
+      <End Role="SNS_UserAlbumDetail" EntitySet="SNS_UserAlbumDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserAlbumsType_SNS_UserAlbums" Association="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_UserAlbums">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserAlbumsType" EntitySet="SNS_UserAlbumsType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SNS_UserFavAlbum_SNS_UserAlbum" Association="MaticsoftFKModel.FK_SNS_UserFavAlbum_SNS_UserAlbum">
+      <End Role="SNS_UserAlbums" EntitySet="SNS_UserAlbums" />
+      <End Role="SNS_UserFavAlbum" EntitySet="SNS_UserFavAlbum" />
+    </AssociationSet>
+    <AssociationSet Name="Accounts_RolePermissions" Association="MaticsoftFKModel.Accounts_RolePermissions">
+      <End Role="Accounts_Permissions" EntitySet="Accounts_Permissions" />
+      <End Role="Accounts_Roles" EntitySet="Accounts_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="Accounts_UserRoles" Association="MaticsoftFKModel.Accounts_UserRoles">
+      <End Role="Accounts_Roles" EntitySet="Accounts_Roles" />
+      <End Role="Accounts_Users" EntitySet="Accounts_Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts_Actions_Permission">
+    <Key>
+      <PropertyRef Name="ActionID" />
+    </Key>
+    <Property Name="ActionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionID" Type="Int32" />
+    <NavigationProperty Name="Accounts_Permissions" Relationship="MaticsoftFKModel.FK_Accounts_Actions_Permission_Accounts_Permissions" FromRole="Accounts_Actions_Permission" ToRole="Accounts_Permissions" />
+  </EntityType>
+  <EntityType Name="Accounts_EmailQueue">
+    <Key>
+      <PropertyRef Name="EmailId" />
+      <PropertyRef Name="EmailPriority" />
+      <PropertyRef Name="IsBodyHtml" />
+      <PropertyRef Name="NextTryTime" />
+      <PropertyRef Name="NumberOfTries" />
+    </Key>
+    <Property Name="EmailId" Type="Guid" Nullable="false" />
+    <Property Name="EmailPriority" Type="Int32" Nullable="false" />
+    <Property Name="IsBodyHtml" Type="Boolean" Nullable="false" />
+    <Property Name="EmailTo" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="EmailCc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EmailBcc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EmailFrom" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="EmailSubject" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="EmailBody" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NextTryTime" Type="DateTime" Nullable="false" />
+    <Property Name="NumberOfTries" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_MailConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Mailaddress" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SMTPServer" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SMTPPort" Type="Int32" />
+    <Property Name="SMTPSSL" Type="Int16" />
+    <Property Name="POPServer" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="POPPort" Type="Int32" />
+    <Property Name="POPSSL" Type="Int16" />
+    <NavigationProperty Name="Accounts_Users" Relationship="MaticsoftFKModel.FK_Accounts_MailConfig_Accounts_Users" FromRole="Accounts_MailConfig" ToRole="Accounts_Users" />
+  </EntityType>
+  <EntityType Name="Accounts_PermissionCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Accounts_Permissions" Relationship="MaticsoftFKModel.FK_Accounts_Permissions_Accounts_PermissionCategories" FromRole="Accounts_PermissionCategories" ToRole="Accounts_Permissions" />
+  </EntityType>
+  <EntityType Name="Accounts_Permissions">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="CategoryID" Type="Int32" />
+    <NavigationProperty Name="Accounts_Actions_Permission" Relationship="MaticsoftFKModel.FK_Accounts_Actions_Permission_Accounts_Permissions" FromRole="Accounts_Permissions" ToRole="Accounts_Actions_Permission" />
+    <NavigationProperty Name="Accounts_PermissionCategories" Relationship="MaticsoftFKModel.FK_Accounts_Permissions_Accounts_PermissionCategories" FromRole="Accounts_Permissions" ToRole="Accounts_PermissionCategories" />
+    <NavigationProperty Name="Accounts_Roles" Relationship="MaticsoftFKModel.Accounts_RolePermissions" FromRole="Accounts_Permissions" ToRole="Accounts_Roles" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsDetail">
+    <Key>
+      <PropertyRef Name="PointsDetailID" />
+    </Key>
+    <Property Name="PointsDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RuleAction" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Score" Type="Int32" Nullable="false" />
+    <Property Name="ExtData" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CurrentPoints" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accounts_PointsRule" Relationship="MaticsoftFKModel.FK_Accounts_PointsDetail_Accounts_PointsRule" FromRole="Accounts_PointsDetail" ToRole="Accounts_PointsRule" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsLimit">
+    <Key>
+      <PropertyRef Name="PointsLimitID" />
+    </Key>
+    <Property Name="PointsLimitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Cycle" Type="Int32" Nullable="false" />
+    <Property Name="CycleUnit" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaxTimes" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accounts_PointsRule" Relationship="MaticsoftFKModel.FK_Accounts_PointsRule_Accounts_PointsLimit" FromRole="Accounts_PointsLimit" ToRole="Accounts_PointsRule" />
+  </EntityType>
+  <EntityType Name="Accounts_PointsRule">
+    <Key>
+      <PropertyRef Name="RuleAction" />
+    </Key>
+    <Property Name="RuleAction" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="PointsLimitID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Score" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_PointsDetail" Relationship="MaticsoftFKModel.FK_Accounts_PointsDetail_Accounts_PointsRule" FromRole="Accounts_PointsRule" ToRole="Accounts_PointsDetail" />
+    <NavigationProperty Name="Accounts_PointsLimit" Relationship="MaticsoftFKModel.FK_Accounts_PointsRule_Accounts_PointsLimit" FromRole="Accounts_PointsRule" ToRole="Accounts_PointsLimit" />
+  </EntityType>
+  <EntityType Name="Accounts_Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Accounts_Permissions" Relationship="MaticsoftFKModel.Accounts_RolePermissions" FromRole="Accounts_Roles" ToRole="Accounts_Permissions" />
+    <NavigationProperty Name="Accounts_Users" Relationship="MaticsoftFKModel.Accounts_UserRoles" FromRole="Accounts_Roles" ToRole="Accounts_Users" />
+  </EntityType>
+  <EntityType Name="Accounts_UserAssignmentRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts_UserBind">
+    <Key>
+      <PropertyRef Name="BindId" />
+    </Key>
+    <Property Name="BindId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Token" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="MediaUserID" Type="Int32" Nullable="false" />
+    <Property Name="MediaNickName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="MediaID" Type="Int32" Nullable="false" />
+    <Property Name="iHome" Type="Boolean" />
+    <Property Name="Comment" Type="Boolean" />
+    <Property Name="GroupTopic" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Accounts_UserRank">
+    <Key>
+      <PropertyRef Name="RankId" />
+    </Key>
+    <Property Name="RankId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Point" Type="Int32" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+    <Property Name="IsAgentRank" Type="Boolean" Nullable="false" />
+    <Property Name="NumberOfMemberRanks" Type="Int32" />
+    <Property Name="IsMemberCreated" Type="Boolean" Nullable="false" />
+    <Property Name="CreatorUserId" Type="Int32" />
+    <Property Name="PriceType" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="PriceOperations" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="PriceValue" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Accounts_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="Binary" Nullable="false" MaxLength="20" FixedLength="true" />
+    <Property Name="NickName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TrueName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="DepartmentID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Activity" Type="Boolean" />
+    <Property Name="UserType" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Style" Type="Int32" />
+    <Property Name="User_iCreator" Type="Int32" />
+    <Property Name="User_dateCreate" Type="DateTime" />
+    <Property Name="User_dateValid" Type="DateTime" />
+    <Property Name="User_dateExpire" Type="DateTime" />
+    <Property Name="User_iApprover" Type="Int32" />
+    <Property Name="User_dateApprove" Type="DateTime" />
+    <Property Name="User_iApproveState" Type="Int32" />
+    <Property Name="User_cLang" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Accounts_MailConfig" Relationship="MaticsoftFKModel.FK_Accounts_MailConfig_Accounts_Users" FromRole="Accounts_Users" ToRole="Accounts_MailConfig" />
+    <NavigationProperty Name="SA_TreeFavorite" Relationship="MaticsoftFKModel.FK_SA_TreeFavorite_Accounts_Users" FromRole="Accounts_Users" ToRole="SA_TreeFavorite" />
+    <NavigationProperty Name="Accounts_Roles" Relationship="MaticsoftFKModel.Accounts_UserRoles" FromRole="Accounts_Users" ToRole="Accounts_Roles" />
+  </EntityType>
+  <EntityType Name="Accounts_UsersApprove">
+    <Key>
+      <PropertyRef Name="ApproveID" />
+    </Key>
+    <Property Name="ApproveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TrueName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDCardNum" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FrontView" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="RearView" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DueDate" Type="DateTime" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ApproveUserID" Type="Int32" Nullable="false" />
+    <Property Name="UserType" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ApproveDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Accounts_UsersExp">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Gravatar" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Singature" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="TelPhone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="HomePage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Birthday" Type="DateTime" />
+    <Property Name="BirthdayVisible" Type="Int16" Nullable="false" />
+    <Property Name="BirthdayIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="Constellation" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="ConstellationVisible" Type="Int16" Nullable="false" />
+    <Property Name="ConstellationIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="NativePlace" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="NativePlaceVisible" Type="Int16" Nullable="false" />
+    <Property Name="NativePlaceIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="RegionId" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="AddressVisible" Type="Int16" Nullable="false" />
+    <Property Name="AddressIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="BodilyForm" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="BodilyFormVisible" Type="Int16" Nullable="false" />
+    <Property Name="BodilyFormIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="BloodType" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="BloodTypeVisible" Type="Int16" Nullable="false" />
+    <Property Name="BloodTypeIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="Marriaged" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="MarriagedVisible" Type="Int16" Nullable="false" />
+    <Property Name="MarriagedIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="PersonalStatus" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="PersonalStatusVisible" Type="Int16" Nullable="false" />
+    <Property Name="PersonalStatusIndexVisible" Type="Boolean" Nullable="false" />
+    <Property Name="Grade" Type="Int32" />
+    <Property Name="Balance" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Points" Type="Int32" />
+    <Property Name="PvCount" Type="Int32" />
+    <Property Name="FansCount" Type="Int32" />
+    <Property Name="FellowCount" Type="Int32" />
+    <Property Name="AblumsCount" Type="Int32" />
+    <Property Name="FavouritesCount" Type="Int32" />
+    <Property Name="FavoritedCount" Type="Int32" />
+    <Property Name="ShareCount" Type="Int32" />
+    <Property Name="ProductsCount" Type="Int32" />
+    <Property Name="PersonalDomain" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastAccessTime" Type="DateTime" />
+    <Property Name="LastAccessIP" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LastPostTime" Type="DateTime" />
+    <Property Name="LastLoginTime" Type="DateTime" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyTopicCount" Type="Int32" />
+    <Property Name="FavTopicCount" Type="Int32" />
+    <Property Name="TopicCount" Type="Int32" />
+    <Property Name="IsUserDPI" Type="Boolean" />
+    <Property Name="PayAccount" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_Comments" Relationship="MaticsoftFKModel.FK_SNS_Comments_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Comments" />
+    <NavigationProperty Name="SNS_FellowTopics" Relationship="MaticsoftFKModel.FK_SNS_FellowTopics_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_FellowTopics" />
+    <NavigationProperty Name="SNS_Groups" Relationship="MaticsoftFKModel.FK_SNS_Group_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Groups" />
+    <NavigationProperty Name="SNS_GroupTopics" Relationship="MaticsoftFKModel.FK_SNS_GroupTopic_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_GroupTopics" />
+    <NavigationProperty Name="SNS_GroupUsers" Relationship="MaticsoftFKModel.FK_SNS_GroupUser_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_GroupUsers" />
+    <NavigationProperty Name="SNS_GuestBook" Relationship="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_GuestBook" />
+    <NavigationProperty Name="SNS_GuestBook1" Relationship="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_GuestBook" />
+    <NavigationProperty Name="SNS_Photos" Relationship="MaticsoftFKModel.FK_SNS_Photo_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Photos" />
+    <NavigationProperty Name="SNS_UserAlbums" Relationship="MaticsoftFKModel.FK_SNS_PhotoAlbum_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_UserAlbums" />
+    <NavigationProperty Name="SNS_Posts" Relationship="MaticsoftFKModel.FK_SNS_Post_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Posts" />
+    <NavigationProperty Name="SNS_PostsTopics" Relationship="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_PostsTopics" />
+    <NavigationProperty Name="SNS_PostsTopics1" Relationship="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_PostsTopics" />
+    <NavigationProperty Name="SNS_Products" Relationship="MaticsoftFKModel.FK_SNS_Product_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Products" />
+    <NavigationProperty Name="SNS_ReferUsers" Relationship="MaticsoftFKModel.FK_SNS_ReferUsers_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_ReferUsers" />
+    <NavigationProperty Name="SNS_Star" Relationship="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_Star" />
+    <NavigationProperty Name="SNS_Star1" Relationship="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_Star" />
+    <NavigationProperty Name="SNS_GroupTopicFav" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_GroupTopicFav" />
+    <NavigationProperty Name="SNS_GroupTopicFav1" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_GroupTopicFav" />
+    <NavigationProperty Name="SNS_GroupTopicReply" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_GroupTopicReply" />
+    <NavigationProperty Name="SNS_GroupTopicReply1" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_GroupTopicReply" />
+    <NavigationProperty Name="SNS_UserFavourite" Relationship="MaticsoftFKModel.FK_SNS_UserFavourite_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_UserFavourite" />
+    <NavigationProperty Name="SNS_UserShipCategories" Relationship="MaticsoftFKModel.FK_SNS_UserShipCategories_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_UserShipCategories" />
+    <NavigationProperty Name="SNS_VisiteLogs" Relationship="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp" FromRole="Accounts_UsersExp" ToRole="SNS_VisiteLogs" />
+    <NavigationProperty Name="SNS_VisiteLogs1" Relationship="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp1" FromRole="Accounts_UsersExp" ToRole="SNS_VisiteLogs" />
+  </EntityType>
+  <EntityType Name="Accounts_UserType">
+    <Key>
+      <PropertyRef Name="UserType" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="UserType" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Accounts_VerifyMail">
+    <Key>
+      <PropertyRef Name="KeyValue" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="KeyValue" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ValidityType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AD_Advertisement">
+    <Key>
+      <PropertyRef Name="AdvertisementId" />
+    </Key>
+    <Property Name="AdvertisementId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdvertisementName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AdvPositionId" Type="Int32" />
+    <Property Name="ContentType" Type="Int32" />
+    <Property Name="FileUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="AlternateText" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="NavigateUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="AdvHtml" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Impressions" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="CreatedUserID" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="DayMaxPV" Type="Int32" />
+    <Property Name="DayMaxIP" Type="Int32" />
+    <Property Name="CPMPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AutoStop" Type="Int32" />
+    <Property Name="Sequence" Type="Int32" />
+    <Property Name="EnterpriseID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AD_AdvertisePosition">
+    <Key>
+      <PropertyRef Name="AdvPositionId" />
+    </Key>
+    <Property Name="AdvPositionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdvPositionName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShowType" Type="Int32" />
+    <Property Name="RepeatColumns" Type="Int32" />
+    <Property Name="Width" Type="Int32" />
+    <Property Name="Height" Type="Int32" />
+    <Property Name="AdvHtml" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="IsOne" Type="Boolean" />
+    <Property Name="TimeInterval" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="CreatedUserID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CMS_Brand">
+    <Key>
+      <PropertyRef Name="BrandID" />
+    </Key>
+    <Property Name="BrandID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="BrandLogo" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="BrandDesc" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="EnterpriseID" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="Orders" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_ClassType">
+    <Key>
+      <PropertyRef Name="ClassTypeID" />
+    </Key>
+    <Property Name="ClassTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassTypeName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CMS_Comment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContentId" Type="Int32" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="ReplyCount" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="TypeID" Type="Int16" Nullable="false" />
+    <Property Name="State" Type="Boolean" Nullable="false" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Content">
+    <Key>
+      <PropertyRef Name="ContentID" />
+    </Key>
+    <Property Name="ContentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SubTitle" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="LastEditUserID" Type="Int32" />
+    <Property Name="LastEditDate" Type="DateTime" />
+    <Property Name="LinkUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="PvCount" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="ClassID" Type="Int32" Nullable="false" />
+    <Property Name="Keywords" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="IsRecomend" Type="Boolean" Nullable="false" />
+    <Property Name="IsHot" Type="Boolean" Nullable="false" />
+    <Property Name="IsColor" Type="Boolean" Nullable="false" />
+    <Property Name="IsTop" Type="Boolean" Nullable="false" />
+    <Property Name="Attachment" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Remary" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="TotalComment" Type="Int32" Nullable="false" />
+    <Property Name="TotalSupport" Type="Int32" Nullable="false" />
+    <Property Name="TotalFav" Type="Int32" Nullable="false" />
+    <Property Name="TotalShare" Type="Int32" Nullable="false" />
+    <Property Name="BeFrom" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CMS_ContentClass">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ClassIndex" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="AllowSubclass" Type="Boolean" Nullable="false" />
+    <Property Name="AllowAddContent" Type="Boolean" Nullable="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Keywords" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ClassTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ClassModel" Type="Int16" Nullable="false" />
+    <Property Name="PageModelName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="Path" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CMS_FLinks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ImgUrl" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="LinkUrl" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="LinkDesc" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="ContactPerson" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="TelPhone" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="TypeID" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Guestbook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="ReplyCount" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CMS_Photo">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="AlbumID" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="ClassID" Type="Int32" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" />
+    <Property Name="IsRecomend" Type="Boolean" />
+    <Property Name="CommentCount" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CMS_PhotoAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CoverPhoto" Type="Int32" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Privacy" Type="Int16" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_PhotoClass">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="Sequence" Type="Int32" />
+    <Property Name="Path" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CMS_PrototypeStore">
+    <Key>
+      <PropertyRef Name="PrototypeStoreID" />
+    </Key>
+    <Property Name="PrototypeStoreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PrototypeStoreName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PrototypeStoreDesc" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="PrototypeStoreAddress" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PrototypeStoreTel" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="BrandID" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="Orders" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_Video">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="AlbumID" Type="Int32" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdateUserID" Type="Int32" />
+    <Property Name="LastUpdateDate" Type="DateTime" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="VideoClassID" Type="Int32" />
+    <Property Name="IsRecomend" Type="Boolean" Nullable="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TotalTime" Type="Int32" />
+    <Property Name="TotalComment" Type="Int32" Nullable="false" />
+    <Property Name="TotalFav" Type="Int32" Nullable="false" />
+    <Property Name="TotalUp" Type="Int32" Nullable="false" />
+    <Property Name="Reference" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="VideoUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="UrlType" Type="Int16" Nullable="false" />
+    <Property Name="VideoFormat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Domain" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Attachment" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Privacy" Type="Int16" Nullable="false" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_VideoAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CoverVideo" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdateUserID" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" />
+    <Property Name="State" Type="Int16" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Privacy" Type="Int16" />
+    <Property Name="PvCount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_VideoClass">
+    <Key>
+      <PropertyRef Name="VideoClassID" />
+    </Key>
+    <Property Name="VideoClassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VideoClassName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_WebMenuConfig">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NavURL" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MenuTitle" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuType" Type="Int32" />
+    <Property Name="Target" Type="Int32" />
+    <Property Name="IsUsed" Type="Boolean" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Visible" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_EmailTemplet">
+    <Key>
+      <PropertyRef Name="EmailType" />
+    </Key>
+    <Property Name="EmailType" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPriority" Type="Int32" Nullable="false" />
+    <Property Name="TagDescription" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="EmailDescription" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="EmailSubject" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="EmailBody" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Ms_Enterprise">
+    <Key>
+      <PropertyRef Name="EnterpriseID" />
+    </Key>
+    <Property Name="EnterpriseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Introduction" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RegisteredCapital" Type="Int32" />
+    <Property Name="TelPhone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactMail" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RegionID" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="EstablishedDate" Type="DateTime" />
+    <Property Name="EstablishedCity" Type="Int32" />
+    <Property Name="LOGO" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="PostCode" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="HomePage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ArtiPerson" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EnteRank" Type="Int32" />
+    <Property Name="EnteClassID" Type="Int32" />
+    <Property Name="CompanyType" Type="Int16" />
+    <Property Name="BusinessLicense" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="TaxNumber" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="AccountBank" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="AccountInfo" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="ServicePhone" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Int16" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="CreatedUserID" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" />
+    <Property Name="UpdatedUserID" Type="Int32" />
+    <Property Name="Balance" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AgentID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_EntryForm">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TelPhone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MSN" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="HouseAddress" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CompanyAddress" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="RegionId" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Ms_Maps">
+    <Key>
+      <PropertyRef Name="MapId" />
+    </Key>
+    <Property Name="MapId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <Property Name="PointerLongitude" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointDimension" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointClass" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointerType" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointerTitle" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointImg" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointerContent" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="SearchCity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="searchArea" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Level" Type="Int32" />
+    <Property Name="enableKeyboard" Type="Boolean" />
+    <Property Name="enableScrollWheelZoom" Type="Boolean" />
+    <Property Name="NavigationControl" Type="Boolean" />
+    <Property Name="ScaleControl" Type="Boolean" />
+    <Property Name="MapTypeControl" Type="Boolean" />
+    <Property Name="MarkersLongitude" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MarkersDimension" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="setAnimation" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LoadEvent" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuItemzoomIn" Type="Boolean" />
+    <Property Name="MenuItemzoomOut" Type="Boolean" />
+    <Property Name="MenuItemsetZoomTop" Type="Boolean" />
+    <Property Name="MenuItemsetPoint" Type="Boolean" />
+    <Property Name="MapType" Type="Int16" Nullable="false" />
+    <Property Name="Other1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Other2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Other3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Ms_Regions">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Name="AreaId" Type="Int32" />
+    <Property Name="RegionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="RegionName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Spell" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SpellShort" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DisplaySequence" Type="Int32" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ms_SEORelation">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KeyName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="LinkURL" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="IsCMS" Type="Boolean" />
+    <Property Name="IsShop" Type="Boolean" />
+    <Property Name="IsSNS" Type="Boolean" />
+    <Property Name="IsComment" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Poll_Forms">
+    <Key>
+      <PropertyRef Name="FormID" />
+    </Key>
+    <Property Name="FormID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Description" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Poll_Options">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="TopicID" Type="Int32" />
+    <Property Name="isChecked" Type="Int16" />
+    <Property Name="SubmitNum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Poll_Reply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopicID" Type="Int32" />
+    <Property Name="ReContent" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="ReTime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Poll_Topics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="Int16" />
+    <Property Name="FormID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Poll_UserPoll">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TopicID" Type="Int32" />
+    <Property Name="OptionID" Type="Int32" />
+    <Property Name="CreatTime" Type="DateTime" />
+    <Property Name="UserIP" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Poll_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="TrueName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserType" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="SA_Config_System">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Keyname" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="KeyType" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_Config_Type">
+    <Key>
+      <PropertyRef Name="KeyType" />
+    </Key>
+    <Property Name="KeyType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_ErrorLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OPTime" Type="DateTime" />
+    <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Loginfo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_Feedback">
+    <Key>
+      <PropertyRef Name="Feedback_iID" />
+    </Key>
+    <Property Name="Feedback_iID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Feedback_cContent" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Feedback_cMail" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Feedback_cPhone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Feedback_cUserName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Feedback_cCompany" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Feedback_cUserIP" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Feedback_bSolved" Type="Boolean" Nullable="false" />
+    <Property Name="Feedback_dateCreate" Type="DateTime" Nullable="false" />
+    <Property Name="Feedback_cResult" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_FilterWords">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Name="FilterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WordPattern" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsForbid" Type="Boolean" />
+    <Property Name="IsMod" Type="Boolean" />
+    <Property Name="RepalceWord" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_Language_mstr">
+    <Key>
+      <PropertyRef Name="Language_cCode" />
+    </Key>
+    <Property Name="Language_cCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Language_cName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Language_bDefault" Type="Boolean" />
+    <Property Name="Language_bValid" Type="Boolean" />
+    <Property Name="Language_dateValid" Type="DateTime" />
+    <Property Name="Language_dateExpire" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="SA_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="datetime" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datetime" Type="DateTime" Nullable="false" />
+    <Property Name="loginfo" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Particular" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_MultiLang_det">
+    <Key>
+      <PropertyRef Name="MultiLang_cField" />
+      <PropertyRef Name="MultiLang_iPKValue" />
+      <PropertyRef Name="MultiLang_cLang" />
+    </Key>
+    <Property Name="MultiLang_iID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MultiLang_cField" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="MultiLang_iPKValue" Type="Int32" Nullable="false" />
+    <Property Name="MultiLang_cLang" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="MultiLang_cValue" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_ReceivedMessages">
+    <Key>
+      <PropertyRef Name="ReceiveMessageId" />
+    </Key>
+    <Property Name="ReceiveMessageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddresserId" Type="Int32" Nullable="false" />
+    <Property Name="AddresseeId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PublishContent" Type="String" Nullable="false" MaxLength="3000" Unicode="true" FixedLength="false" />
+    <Property Name="PublishDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastTime" Type="DateTime" Nullable="false" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SA_SendedMessages">
+    <Key>
+      <PropertyRef Name="SendMessageId" />
+    </Key>
+    <Property Name="SendMessageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddresserId" Type="Int32" Nullable="false" />
+    <Property Name="AddresseeId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PublishContent" Type="String" Nullable="false" MaxLength="3000" Unicode="true" FixedLength="false" />
+    <Property Name="PublishDate" Type="DateTime" Nullable="false" />
+    <Property Name="ReceiveMessageId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="SA_SiteMessage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SenderID" Type="Int32" />
+    <Property Name="ReceiverID" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MsgType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SendTime" Type="DateTime" />
+    <Property Name="ReadTime" Type="DateTime" />
+    <Property Name="ReceiverIsRead" Type="Boolean" />
+    <Property Name="SenderIsDel" Type="Boolean" />
+    <Property Name="ReaderIsDel" Type="Boolean" />
+    <Property Name="Ext1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Ext2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_SiteMessageLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessageID" Type="Int32" />
+    <Property Name="MessageType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MessageState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReceiverID" Type="Int32" />
+    <Property Name="Ext1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Ext2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_SiteSettings">
+    <Key>
+      <PropertyRef Name="SettingsId" />
+    </Key>
+    <Property Name="SettingsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Disabled" Type="Boolean" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="SettingsXML" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SettingsKey" Type="Guid" />
+    <Property Name="ApplicationName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SA_Tree">
+    <Key>
+      <PropertyRef Name="NodeID" />
+    </Key>
+    <Property Name="NodeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TreeText" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="ParentPath" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Location" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionID" Type="Int32" />
+    <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ModuleID" Type="Int32" />
+    <Property Name="KeShiDM" Type="Int32" />
+    <Property Name="KeshiPublic" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TreeType" Type="Int16" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SA_TreeFavorite">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="NodeID" Type="Int32" Nullable="false" />
+    <Property Name="CreatDate" Type="DateTime" Nullable="false" />
+    <Property Name="OrderID" Type="Int32" />
+    <NavigationProperty Name="Accounts_Users" Relationship="MaticsoftFKModel.FK_SA_TreeFavorite_Accounts_Users" FromRole="SA_TreeFavorite" ToRole="Accounts_Users" />
+  </EntityType>
+  <EntityType Name="SA_UserLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OPTime" Type="DateTime" />
+    <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="OPInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserType" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="UserIP" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SNS_AlbumType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsMenu" Type="Boolean" Nullable="false" />
+    <Property Name="MenuIsShow" Type="Boolean" Nullable="false" />
+    <Property Name="MenuSequence" Type="Int32" Nullable="false" />
+    <Property Name="AlbumsCount" Type="Int32" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_UserAlbumsType" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_AlbumType" FromRole="SNS_AlbumType" ToRole="SNS_UserAlbumsType" />
+  </EntityType>
+  <EntityType Name="SNS_Categories">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="Path" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="HasChildren" Type="Boolean" Nullable="false" />
+    <Property Name="IsMenu" Type="Boolean" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="MenuIsShow" Type="Boolean" Nullable="false" />
+    <Property Name="MenuSequence" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="FontColor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_Photos" Relationship="MaticsoftFKModel.FK_SNS_Photos_SNS_Categories" FromRole="SNS_Categories" ToRole="SNS_Photos" />
+    <NavigationProperty Name="SNS_Videos" Relationship="MaticsoftFKModel.FK_SNS_Videos_SNS_Categories" FromRole="SNS_Categories" ToRole="SNS_Videos" />
+  </EntityType>
+  <EntityType Name="SNS_CategorySource">
+    <Key>
+      <PropertyRef Name="SourceId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="SourceId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="HasChildren" Type="Boolean" Nullable="false" />
+    <Property Name="IsMenu" Type="Boolean" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="MenuIsShow" Type="Boolean" Nullable="false" />
+    <Property Name="MenuSequence" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="SnsCategoryId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SNS_Comments">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="TargetId" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HasReferUser" Type="Boolean" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <Property Name="ReplyCount" Type="Int32" Nullable="false" />
+    <Property Name="UserIP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Comments_Accounts_UsersExp" FromRole="SNS_Comments" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Photos" Relationship="MaticsoftFKModel.FK_SNS_Comments_SNS_Photos" FromRole="SNS_Comments" ToRole="SNS_Photos" />
+    <NavigationProperty Name="SNS_Posts" Relationship="MaticsoftFKModel.FK_SNS_Comments_SNS_Posts" FromRole="SNS_Comments" ToRole="SNS_Posts" />
+  </EntityType>
+  <EntityType Name="SNS_FellowTopics">
+    <Key>
+      <PropertyRef Name="TopicTitle" />
+      <PropertyRef Name="CreatedUserId" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopicTitle" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedUserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_FellowTopics_Accounts_UsersExp" FromRole="SNS_FellowTopics" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_PostsTopics" Relationship="MaticsoftFKModel.FK_SNS_FellowTopics_SNS_PostTopics" FromRole="SNS_FellowTopics" ToRole="SNS_PostsTopics" />
+  </EntityType>
+  <EntityType Name="SNS_GradeConfig">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Name="GradeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GradeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MinRange" Type="Int32" />
+    <Property Name="MaxRange" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SNS_Groups">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="GroupUserCount" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="GroupLogo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="GroupBackground" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyGroupReason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecommand" Type="Int16" Nullable="false" />
+    <Property Name="TopicCount" Type="Int32" Nullable="false" />
+    <Property Name="TopicReplyCount" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Privacy" Type="Int16" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="GroupLogoThumb" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Group_Accounts_UsersExp" FromRole="SNS_Groups" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_GroupTopicReply" Relationship="MaticsoftFKModel.FK_SNS_GroupTopicReply_SNS_Groups" FromRole="SNS_Groups" ToRole="SNS_GroupTopicReply" />
+    <NavigationProperty Name="SNS_GroupTopics" Relationship="MaticsoftFKModel.FK_SNS_GroupTopics_SNS_Groups" FromRole="SNS_Groups" ToRole="SNS_GroupTopics" />
+    <NavigationProperty Name="SNS_GroupUsers" Relationship="MaticsoftFKModel.FK_SNS_GroupUser_SNS_Group" FromRole="SNS_Groups" ToRole="SNS_GroupUsers" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecommand" Type="Int16" Nullable="false" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopicFav">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="TopicID" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp" FromRole="SNS_GroupTopicFav" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_Accounts_UsersExp1" FromRole="SNS_GroupTopicFav" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_GroupTopics" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_SNS_GroupTopic" FromRole="SNS_GroupTopicFav" ToRole="SNS_GroupTopics" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopicReply">
+    <Key>
+      <PropertyRef Name="ReplyID" />
+    </Key>
+    <Property Name="ReplyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="ReplyType" Type="Int32" Nullable="false" />
+    <Property Name="ReplyNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReplyUserID" Type="Int32" Nullable="false" />
+    <Property Name="OriginalID" Type="Int32" Nullable="false" />
+    <Property Name="OrginalDes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OrginalUserID" Type="Int32" Nullable="false" />
+    <Property Name="OrgianlNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TopicID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HasReferUsers" Type="Boolean" />
+    <Property Name="PhotoUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="TargetId" Type="Int32" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="ProductUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ProductName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ReplyExUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ProductLinkUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="FavCount" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UserIP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp" FromRole="SNS_GroupTopicReply" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_Accounts_UsersExp1" FromRole="SNS_GroupTopicReply" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Groups" Relationship="MaticsoftFKModel.FK_SNS_GroupTopicReply_SNS_Groups" FromRole="SNS_GroupTopicReply" ToRole="SNS_Groups" />
+    <NavigationProperty Name="SNS_GroupTopics" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_SNS_GroupTopic" FromRole="SNS_GroupTopicReply" ToRole="SNS_GroupTopics" />
+  </EntityType>
+  <EntityType Name="SNS_GroupTopics">
+    <Key>
+      <PropertyRef Name="TopicID" />
+    </Key>
+    <Property Name="TopicID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecomend" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="ReplyCount" Type="Int32" Nullable="false" />
+    <Property Name="PvCount" Type="Int32" Nullable="false" />
+    <Property Name="DingCount" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="IsTop" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsAdminRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="ChannelSequence" Type="Int32" />
+    <Property Name="HasReferUsers" Type="Boolean" Nullable="false" />
+    <Property Name="PostExUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="VideoUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="AudioUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ProductName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ProductLinkUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="TargetID" Type="Int32" />
+    <Property Name="FavCount" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastReplyUserId" Type="Int32" />
+    <Property Name="LastReplyNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastPostTime" Type="DateTime" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_GroupTopic_Accounts_UsersExp" FromRole="SNS_GroupTopics" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Groups" Relationship="MaticsoftFKModel.FK_SNS_GroupTopics_SNS_Groups" FromRole="SNS_GroupTopics" ToRole="SNS_Groups" />
+    <NavigationProperty Name="SNS_GroupTopicFav" Relationship="MaticsoftFKModel.FK_SNS_TopicCollection_SNS_GroupTopic" FromRole="SNS_GroupTopics" ToRole="SNS_GroupTopicFav" />
+    <NavigationProperty Name="SNS_GroupTopicReply" Relationship="MaticsoftFKModel.FK_SNS_TopicReply_SNS_GroupTopic" FromRole="SNS_GroupTopics" ToRole="SNS_GroupTopicReply" />
+  </EntityType>
+  <EntityType Name="SNS_GroupUsers">
+    <Key>
+      <PropertyRef Name="GroupID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="NickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="JoinTime" Type="DateTime" Nullable="false" />
+    <Property Name="Role" Type="Int32" Nullable="false" />
+    <Property Name="ApplyReason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_GroupUser_Accounts_UsersExp" FromRole="SNS_GroupUsers" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Groups" Relationship="MaticsoftFKModel.FK_SNS_GroupUser_SNS_Group" FromRole="SNS_GroupUsers" ToRole="SNS_Groups" />
+  </EntityType>
+  <EntityType Name="SNS_GuestBook">
+    <Key>
+      <PropertyRef Name="GuestBookID" />
+    </Key>
+    <Property Name="GuestBookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreateNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ToUserID" Type="Int32" Nullable="false" />
+    <Property Name="ToNickName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UserIP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Privacy" Type="Int16" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Path" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Depth" Type="Int32" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp" FromRole="SNS_GuestBook" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_GuestBook_Accounts_UsersExp1" FromRole="SNS_GuestBook" ToRole="Accounts_UsersExp" />
+  </EntityType>
+  <EntityType Name="SNS_HotWords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KeyWord" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_OnLineShopPhoto">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="PhotoID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Photos">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="PhotoUrl" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="IsRecomend" Type="Int32" />
+    <Property Name="ForwardedCount" Type="Int32" Nullable="false" />
+    <Property Name="CommentCount" Type="Int32" Nullable="false" />
+    <Property Name="FavouriteCount" Type="Int32" Nullable="false" />
+    <Property Name="OwnerPhotoId" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="TopCommentsId" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Photo_Accounts_UsersExp" FromRole="SNS_Photos" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Categories" Relationship="MaticsoftFKModel.FK_SNS_Photos_SNS_Categories" FromRole="SNS_Photos" ToRole="SNS_Categories" />
+    <NavigationProperty Name="SNS_Comments" Relationship="MaticsoftFKModel.FK_SNS_Comments_SNS_Photos" FromRole="SNS_Photos" ToRole="SNS_Comments" />
+    <NavigationProperty Name="SNS_UserAlbumDetail" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Photos" FromRole="SNS_Photos" ToRole="SNS_UserAlbumDetail" />
+  </EntityType>
+  <EntityType Name="SNS_PhotoTags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecommand" Type="Int16" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SNS_Posts">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OriginalID" Type="Int32" Nullable="false" />
+    <Property Name="ForwardedID" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HasReferUsers" Type="Boolean" Nullable="false" />
+    <Property Name="CommentCount" Type="Int32" Nullable="false" />
+    <Property Name="ForwardCount" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="PostExUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="VideoUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="AudioUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="TargetId" Type="Int32" />
+    <Property Name="TopicTitle" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ProductLinkUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FavCount" Type="Int32" />
+    <Property Name="UserIP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Post_Accounts_UsersExp" FromRole="SNS_Posts" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_Comments" Relationship="MaticsoftFKModel.FK_SNS_Comments_SNS_Posts" FromRole="SNS_Posts" ToRole="SNS_Comments" />
+  </EntityType>
+  <EntityType Name="SNS_PostsTopics">
+    <Key>
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="TopicsCount" Type="Int32" Nullable="false" />
+    <Property Name="IsRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp" FromRole="SNS_PostsTopics" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_PostTopics_Accounts_UsersExp1" FromRole="SNS_PostsTopics" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_FellowTopics" Relationship="MaticsoftFKModel.FK_SNS_FellowTopics_SNS_PostTopics" FromRole="SNS_PostsTopics" ToRole="SNS_FellowTopics" />
+  </EntityType>
+  <EntityType Name="SNS_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ProductDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ProductSourceID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="ProductUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FavouriteCount" Type="Int32" Nullable="false" />
+    <Property Name="GroupBuyCount" Type="Int32" />
+    <Property Name="CreateUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="IsRecomend" Type="Int32" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="CommentCount" Type="Int32" Nullable="false" />
+    <Property Name="ForwardedCount" Type="Int32" />
+    <Property Name="ShareDescription" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="SkipCount" Type="Int32" Nullable="false" />
+    <Property Name="OwnerProductId" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="TopCommentsId" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Color" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Product_Accounts_UsersExp" FromRole="SNS_Products" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_ProductSources" Relationship="MaticsoftFKModel.FK_SNS_Products_SNS_ProductSources" FromRole="SNS_Products" ToRole="SNS_ProductSources" />
+  </EntityType>
+  <EntityType Name="SNS_ProductSources">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WebSiteName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="WebSiteUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="WebSiteLogo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CategoryTags" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PriceTags" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ImagesTag" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="SNS_Products" Relationship="MaticsoftFKModel.FK_SNS_Products_SNS_ProductSources" FromRole="SNS_ProductSources" ToRole="SNS_Products" />
+  </EntityType>
+  <EntityType Name="SNS_ReferUsers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagetID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="ReferUserID" Type="Int32" Nullable="false" />
+    <Property Name="ReferNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_ReferUsers_Accounts_UsersExp" FromRole="SNS_ReferUsers" ToRole="Accounts_UsersExp" />
+  </EntityType>
+  <EntityType Name="SNS_Report">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReportTypeID" Type="Int32" Nullable="false" />
+    <Property Name="TargetType" Type="Int32" Nullable="false" />
+    <Property Name="TargetID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="SNS_ReportType" Relationship="MaticsoftFKModel.FK_SNS_Report_SNS_ReportType" FromRole="SNS_Report" ToRole="SNS_ReportType" />
+  </EntityType>
+  <EntityType Name="SNS_ReportType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_Report" Relationship="MaticsoftFKModel.FK_SNS_Report_SNS_ReportType" FromRole="SNS_ReportType" ToRole="SNS_Report" />
+  </EntityType>
+  <EntityType Name="SNS_SearchWordLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SearchWord" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedUserId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_SearchWordTop">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotWord" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="TimeUnit" Type="Int32" Nullable="false" />
+    <Property Name="DateStart" Type="DateTime" />
+    <Property Name="DateEnd" Type="DateTime" />
+    <Property Name="SearchCount" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_Star">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <Property Name="NickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserGravatar" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ApplyReason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="DateTime" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp" FromRole="SNS_Star" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_Star_Accounts_UsersExp1" FromRole="SNS_Star" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_StarType" Relationship="MaticsoftFKModel.FK_SNS_Star_SNS_StarType" FromRole="SNS_Star" ToRole="SNS_StarType" />
+    <NavigationProperty Name="SNS_StarType1" Relationship="MaticsoftFKModel.FK_SNS_Star_SNS_StarType1" FromRole="SNS_Star" ToRole="SNS_StarType" />
+  </EntityType>
+  <EntityType Name="SNS_StarRank">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="NickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsRecommend" Type="Boolean" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="TimeUnit" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="RankDate" Type="DateTime" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="UserGravatar" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="RankType" Type="Int16" />
+    <NavigationProperty Name="SNS_StarType" Relationship="MaticsoftFKModel.FK_SNS_StarRank_SNS_StarType" FromRole="SNS_StarRank" ToRole="SNS_StarType" />
+  </EntityType>
+  <EntityType Name="SNS_StarType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CheckRule" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="SNS_Star" Relationship="MaticsoftFKModel.FK_SNS_Star_SNS_StarType" FromRole="SNS_StarType" ToRole="SNS_Star" />
+    <NavigationProperty Name="SNS_Star1" Relationship="MaticsoftFKModel.FK_SNS_Star_SNS_StarType1" FromRole="SNS_StarType" ToRole="SNS_Star" />
+    <NavigationProperty Name="SNS_StarRank" Relationship="MaticsoftFKModel.FK_SNS_StarRank_SNS_StarType" FromRole="SNS_StarType" ToRole="SNS_StarRank" />
+  </EntityType>
+  <EntityType Name="SNS_Tags">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="IsRecommand" Type="Int32" />
+    <NavigationProperty Name="SNS_TagType" Relationship="MaticsoftFKModel.FK_SNS_Tags_SNS_TagType" FromRole="SNS_Tags" ToRole="SNS_TagType" />
+  </EntityType>
+  <EntityType Name="SNS_TagType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Cid" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="SNS_Tags" Relationship="MaticsoftFKModel.FK_SNS_Tags_SNS_TagType" FromRole="SNS_TagType" ToRole="SNS_Tags" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbumDetail">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+      <PropertyRef Name="TargetID" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumID" Type="Int32" Nullable="false" />
+    <Property Name="TargetID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="AlbumUserId" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_Photos" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Photos" FromRole="SNS_UserAlbumDetail" ToRole="SNS_Photos" />
+    <NavigationProperty Name="SNS_UserAlbums" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_UserAlbums" FromRole="SNS_UserAlbumDetail" ToRole="SNS_UserAlbums" />
+    <NavigationProperty Name="SNS_Videos" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Videos" FromRole="SNS_UserAlbumDetail" ToRole="SNS_Videos" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbums">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CoverTargetID" Type="Int32" />
+    <Property Name="CoverPhotoUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CoverTargetType" Type="Int32" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PhotoCount" Type="Int32" Nullable="false" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="FavouriteCount" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CommentsCount" Type="Int32" />
+    <Property Name="IsRecommend" Type="Int16" Nullable="false" />
+    <Property Name="ChannelSequence" Type="Int32" Nullable="false" />
+    <Property Name="Privacy" Type="Int32" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_PhotoAlbum_Accounts_UsersExp" FromRole="SNS_UserAlbums" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="SNS_UserAlbumDetail" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_UserAlbums" FromRole="SNS_UserAlbums" ToRole="SNS_UserAlbumDetail" />
+    <NavigationProperty Name="SNS_UserAlbumsType" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_UserAlbums" FromRole="SNS_UserAlbums" ToRole="SNS_UserAlbumsType" />
+    <NavigationProperty Name="SNS_UserFavAlbum" Relationship="MaticsoftFKModel.FK_SNS_UserFavAlbum_SNS_UserAlbum" FromRole="SNS_UserAlbums" ToRole="SNS_UserFavAlbum" />
+  </EntityType>
+  <EntityType Name="SNS_UserAlbumsType">
+    <Key>
+      <PropertyRef Name="AlbumsID" />
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="AlbumsID" Type="Int32" Nullable="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <Property Name="AlbumsUserID" Type="Int32" />
+    <NavigationProperty Name="SNS_AlbumType" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_AlbumType" FromRole="SNS_UserAlbumsType" ToRole="SNS_AlbumType" />
+    <NavigationProperty Name="SNS_UserAlbums" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumsType_SNS_UserAlbums" FromRole="SNS_UserAlbumsType" ToRole="SNS_UserAlbums" />
+  </EntityType>
+  <EntityType Name="SNS_UserFavAlbum">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SNS_UserAlbums" Relationship="MaticsoftFKModel.FK_SNS_UserFavAlbum_SNS_UserAlbum" FromRole="SNS_UserFavAlbum" ToRole="SNS_UserAlbums" />
+  </EntityType>
+  <EntityType Name="SNS_UserFavourite">
+    <Key>
+      <PropertyRef Name="FavouriteID" />
+    </Key>
+    <Property Name="FavouriteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TargetID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerUserID" Type="Int32" />
+    <Property Name="OwnerNickName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_UserFavourite_Accounts_UsersExp" FromRole="SNS_UserFavourite" ToRole="Accounts_UsersExp" />
+  </EntityType>
+  <EntityType Name="SNS_UserShip">
+    <Key>
+      <PropertyRef Name="ActiveUserID" />
+      <PropertyRef Name="PassiveUserID" />
+    </Key>
+    <Property Name="ActiveUserID" Type="Int32" Nullable="false" />
+    <Property Name="PassiveUserID" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsRead" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SNS_UserShipCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Privacy" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_UserShipCategories_Accounts_UsersExp" FromRole="SNS_UserShipCategories" ToRole="Accounts_UsersExp" />
+  </EntityType>
+  <EntityType Name="SNS_Videos">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VideoName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="VideoUrl" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedUserID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedNickName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="PVCount" Type="Int32" Nullable="false" />
+    <Property Name="ThumbImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="NormalImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="IsRecomend" Type="Int32" Nullable="false" />
+    <Property Name="ForwardedCount" Type="Int32" Nullable="false" />
+    <Property Name="CommentCount" Type="Int32" Nullable="false" />
+    <Property Name="FavouriteCount" Type="Int32" Nullable="false" />
+    <Property Name="OwnerVideoId" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SNS_Categories" Relationship="MaticsoftFKModel.FK_SNS_Videos_SNS_Categories" FromRole="SNS_Videos" ToRole="SNS_Categories" />
+    <NavigationProperty Name="SNS_UserAlbumDetail" Relationship="MaticsoftFKModel.FK_SNS_UserAlbumDetail_SNS_Videos" FromRole="SNS_Videos" ToRole="SNS_UserAlbumDetail" />
+  </EntityType>
+  <EntityType Name="SNS_VisiteLogs">
+    <Key>
+      <PropertyRef Name="VisitID" />
+    </Key>
+    <Property Name="VisitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FromUserID" Type="Int32" Nullable="false" />
+    <Property Name="FromNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ToUserID" Type="Int32" Nullable="false" />
+    <Property Name="ToNickName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VisitTimes" Type="Int32" />
+    <Property Name="LastVisitTime" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Accounts_UsersExp" Relationship="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp" FromRole="SNS_VisiteLogs" ToRole="Accounts_UsersExp" />
+    <NavigationProperty Name="Accounts_UsersExp1" Relationship="MaticsoftFKModel.FK_SNS_VisiteLogs_Accounts_UsersExp1" FromRole="SNS_VisiteLogs" ToRole="Accounts_UsersExp" />
+  </EntityType>
+  <Association Name="FK_Accounts_Actions_Permission_Accounts_Permissions">
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Accounts_Permissions" Multiplicity="0..1" />
+    <End Role="Accounts_Actions_Permission" Type="MaticsoftFKModel.Accounts_Actions_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Permissions">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="Accounts_Actions_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_MailConfig_Accounts_Users">
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Accounts_Users" Multiplicity="1" />
+    <End Role="Accounts_MailConfig" Type="MaticsoftFKModel.Accounts_MailConfig" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Accounts_MailConfig">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_Permissions_Accounts_PermissionCategories">
+    <End Role="Accounts_PermissionCategories" Type="MaticsoftFKModel.Accounts_PermissionCategories" Multiplicity="0..1" />
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Accounts_Permissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PermissionCategories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Accounts_Permissions">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_PointsDetail_Accounts_PointsRule">
+    <End Role="Accounts_PointsRule" Type="MaticsoftFKModel.Accounts_PointsRule" Multiplicity="1" />
+    <End Role="Accounts_PointsDetail" Type="MaticsoftFKModel.Accounts_PointsDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PointsRule">
+        <PropertyRef Name="RuleAction" />
+      </Principal>
+      <Dependent Role="Accounts_PointsDetail">
+        <PropertyRef Name="RuleAction" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Accounts_PointsRule_Accounts_PointsLimit">
+    <End Role="Accounts_PointsLimit" Type="MaticsoftFKModel.Accounts_PointsLimit" Multiplicity="1" />
+    <End Role="Accounts_PointsRule" Type="MaticsoftFKModel.Accounts_PointsRule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_PointsLimit">
+        <PropertyRef Name="PointsLimitID" />
+      </Principal>
+      <Dependent Role="Accounts_PointsRule">
+        <PropertyRef Name="PointsLimitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SA_TreeFavorite_Accounts_Users">
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Accounts_Users" Multiplicity="1" />
+    <End Role="SA_TreeFavorite" Type="MaticsoftFKModel.SA_TreeFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SA_TreeFavorite">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_FellowTopics_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_FellowTopics" Type="MaticsoftFKModel.SNS_FellowTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_FellowTopics">
+        <PropertyRef Name="CreatedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Group_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.SNS_Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Groups">
+        <PropertyRef Name="CreatedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopic_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.SNS_GroupTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupUser_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupUsers" Type="MaticsoftFKModel.SNS_GroupUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupUsers">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GuestBook_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GuestBook" Type="MaticsoftFKModel.SNS_GuestBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GuestBook">
+        <PropertyRef Name="CreateUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GuestBook_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GuestBook" Type="MaticsoftFKModel.SNS_GuestBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GuestBook">
+        <PropertyRef Name="ToUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Photo_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.SNS_Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Photos">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PhotoAlbum_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.SNS_UserAlbums" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbums">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Post_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Posts" Type="MaticsoftFKModel.SNS_Posts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Posts">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PostTopics_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.SNS_PostsTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_PostsTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_PostTopics_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.SNS_PostsTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_PostsTopics">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Product_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Products" Type="MaticsoftFKModel.SNS_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Products">
+        <PropertyRef Name="CreateUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_ReferUsers_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_ReferUsers" Type="MaticsoftFKModel.SNS_ReferUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_ReferUsers">
+        <PropertyRef Name="ReferUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="ReplyUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="OrginalUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserFavourite_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserFavourite" Type="MaticsoftFKModel.SNS_UserFavourite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserFavourite">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserShipCategories_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_UserShipCategories" Type="MaticsoftFKModel.SNS_UserShipCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_UserShipCategories">
+        <PropertyRef Name="CreatedUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_VisiteLogs_Accounts_UsersExp">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_VisiteLogs" Type="MaticsoftFKModel.SNS_VisiteLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_VisiteLogs">
+        <PropertyRef Name="FromUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_VisiteLogs_Accounts_UsersExp1">
+    <End Role="Accounts_UsersExp" Type="MaticsoftFKModel.Accounts_UsersExp" Multiplicity="1" />
+    <End Role="SNS_VisiteLogs" Type="MaticsoftFKModel.SNS_VisiteLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts_UsersExp">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="SNS_VisiteLogs">
+        <PropertyRef Name="ToUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumsType_SNS_AlbumType">
+    <End Role="SNS_AlbumType" Type="MaticsoftFKModel.SNS_AlbumType" Multiplicity="1" />
+    <End Role="SNS_UserAlbumsType" Type="MaticsoftFKModel.SNS_UserAlbumsType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_AlbumType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumsType">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Photos_SNS_Categories">
+    <End Role="SNS_Categories" Type="MaticsoftFKModel.SNS_Categories" Multiplicity="0..1" />
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.SNS_Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Categories">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="SNS_Photos">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Videos_SNS_Categories">
+    <End Role="SNS_Categories" Type="MaticsoftFKModel.SNS_Categories" Multiplicity="0..1" />
+    <End Role="SNS_Videos" Type="MaticsoftFKModel.SNS_Videos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Categories">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="SNS_Videos">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_SNS_Photos">
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.SNS_Photos" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Photos">
+        <PropertyRef Name="PhotoID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="TargetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Comments_SNS_Posts">
+    <End Role="SNS_Posts" Type="MaticsoftFKModel.SNS_Posts" Multiplicity="1" />
+    <End Role="SNS_Comments" Type="MaticsoftFKModel.SNS_Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Posts">
+        <PropertyRef Name="PostID" />
+      </Principal>
+      <Dependent Role="SNS_Comments">
+        <PropertyRef Name="TargetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_FellowTopics_SNS_PostTopics">
+    <End Role="SNS_PostsTopics" Type="MaticsoftFKModel.SNS_PostsTopics" Multiplicity="1" />
+    <End Role="SNS_FellowTopics" Type="MaticsoftFKModel.SNS_FellowTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_PostsTopics">
+        <PropertyRef Name="Title" />
+      </Principal>
+      <Dependent Role="SNS_FellowTopics">
+        <PropertyRef Name="TopicTitle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopicReply_SNS_Groups">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupTopics_SNS_Groups">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.SNS_GroupTopics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopics">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_GroupUser_SNS_Group">
+    <End Role="SNS_Groups" Type="MaticsoftFKModel.SNS_Groups" Multiplicity="1" />
+    <End Role="SNS_GroupUsers" Type="MaticsoftFKModel.SNS_GroupUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Groups">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="SNS_GroupUsers">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicCollection_SNS_GroupTopic">
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.SNS_GroupTopics" Multiplicity="1" />
+    <End Role="SNS_GroupTopicFav" Type="MaticsoftFKModel.SNS_GroupTopicFav" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_GroupTopics">
+        <PropertyRef Name="TopicID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicFav">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_TopicReply_SNS_GroupTopic">
+    <End Role="SNS_GroupTopics" Type="MaticsoftFKModel.SNS_GroupTopics" Multiplicity="1" />
+    <End Role="SNS_GroupTopicReply" Type="MaticsoftFKModel.SNS_GroupTopicReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_GroupTopics">
+        <PropertyRef Name="TopicID" />
+      </Principal>
+      <Dependent Role="SNS_GroupTopicReply">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_Photos">
+    <End Role="SNS_Photos" Type="MaticsoftFKModel.SNS_Photos" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Photos">
+        <PropertyRef Name="PhotoID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="TargetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Products_SNS_ProductSources">
+    <End Role="SNS_ProductSources" Type="MaticsoftFKModel.SNS_ProductSources" Multiplicity="0..1" />
+    <End Role="SNS_Products" Type="MaticsoftFKModel.SNS_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_ProductSources">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Products">
+        <PropertyRef Name="ProductSourceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Report_SNS_ReportType">
+    <End Role="SNS_ReportType" Type="MaticsoftFKModel.SNS_ReportType" Multiplicity="1" />
+    <End Role="SNS_Report" Type="MaticsoftFKModel.SNS_Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_ReportType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Report">
+        <PropertyRef Name="ReportTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_SNS_StarType">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Star_SNS_StarType1">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_Star" Type="MaticsoftFKModel.SNS_Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_Star">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_StarRank_SNS_StarType">
+    <End Role="SNS_StarType" Type="MaticsoftFKModel.SNS_StarType" Multiplicity="1" />
+    <End Role="SNS_StarRank" Type="MaticsoftFKModel.SNS_StarRank" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_StarType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="SNS_StarRank">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_Tags_SNS_TagType">
+    <End Role="SNS_TagType" Type="MaticsoftFKModel.SNS_TagType" Multiplicity="1" />
+    <End Role="SNS_Tags" Type="MaticsoftFKModel.SNS_Tags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_TagType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SNS_Tags">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_UserAlbums">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumDetail_SNS_Videos">
+    <End Role="SNS_Videos" Type="MaticsoftFKModel.SNS_Videos" Multiplicity="1" />
+    <End Role="SNS_UserAlbumDetail" Type="MaticsoftFKModel.SNS_UserAlbumDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_Videos">
+        <PropertyRef Name="VideoID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumDetail">
+        <PropertyRef Name="TargetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserAlbumsType_SNS_UserAlbums">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserAlbumsType" Type="MaticsoftFKModel.SNS_UserAlbumsType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserAlbumsType">
+        <PropertyRef Name="AlbumsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SNS_UserFavAlbum_SNS_UserAlbum">
+    <End Role="SNS_UserAlbums" Type="MaticsoftFKModel.SNS_UserAlbums" Multiplicity="1" />
+    <End Role="SNS_UserFavAlbum" Type="MaticsoftFKModel.SNS_UserFavAlbum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SNS_UserAlbums">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="SNS_UserFavAlbum">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Accounts_RolePermissions">
+    <End Role="Accounts_Permissions" Type="MaticsoftFKModel.Accounts_Permissions" Multiplicity="*" />
+    <End Role="Accounts_Roles" Type="MaticsoftFKModel.Accounts_Roles" Multiplicity="*" />
+  </Association>
+  <Association Name="Accounts_UserRoles">
+    <End Role="Accounts_Roles" Type="MaticsoftFKModel.Accounts_Roles" Multiplicity="*" />
+    <End Role="Accounts_Users" Type="MaticsoftFKModel.Accounts_Users" Multiplicity="*" />
+  </Association>
+</Schema>
